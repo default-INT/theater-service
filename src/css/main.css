@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "GTWalsheimPro";
+    src: url('../fonts/GTWalsheimPro.otf') format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'GTWalsheimPro', serif;
+    font-size: 2vmax;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+/*
+    Header start
+*/
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+    overflow: hidden;
+}
+
+header .title {
+    font-size: 3vmax;
+    margin-left: 10vmin;
+    padding: 1vmin 1.5vmin 1vmin 1.5vmin;
+    display: flex;
+    align-items: center;
+    color: white;
+    background: #f00;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+}
+
+header #login-menu {
+    display: flex;
+}
+
+header #login-menu div {
+    padding-right: 1vmin;
+    display: flex;
+    align-items: center;
+}
+
+header #login-menu #util-btn {
+    border-left: red 0.5vmin solid;
+}
+
+header #login-menu #util-btn a {
+    padding: 2vmin;
+    color: #f00;
+}
+
+header #login-menu #util-btn a:hover {
+    background: #f00;
+    color: white;
+}
+
+/*
+    Header end
+*/
