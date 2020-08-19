@@ -4,6 +4,11 @@ const elementSelector = {
     'object': child => child
 }
 
+/**
+ *
+ * @param option {object}
+ * @returns {HTMLDivElement}
+ */
 export const node = function (option) {
     const type = option.type ? option.type : 'div';
     const element = document.createElement(type);

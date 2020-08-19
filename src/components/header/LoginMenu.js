@@ -1,9 +1,5 @@
-import {node} from "../util";
+import {node} from "../../util";
 
-const Title = node({
-    children: 'Theater',
-    classList: ['title']
-});
 
 const UtilBtn = node({
     id: 'util-btn',
@@ -19,22 +15,13 @@ const UtilBtn = node({
             href: ''
         })
     ]
-})
+});
 
-const LoginMenu = node({
+export default node({
     id: 'login-menu',
     children: [
         node({children: 'User: '}),
         node({id: 'user-status', children: 'guest'}),
         UtilBtn
-    ]
-})
-
-export default node({
-    type: 'header',
-    id: 'header',
-    children: [
-        Title,
-        LoginMenu
     ]
 });
