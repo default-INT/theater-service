@@ -1,21 +1,21 @@
 package by.gstu.itp.models.beans;
 
+import javax.persistence.*;
 import java.util.Objects;
 
 /**
  * Immutable class describe play author.
  */
-public class Author {
-    private final int id;
+@Entity
+@Table(name="authors")
+public class Author extends EntityBean {
+
+    @Column(unique = true)
     private final String name;
 
     public Author(int id, String name) {
-        this.id = id;
+        super(id);
         this.name = Objects.requireNonNull(name);
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {

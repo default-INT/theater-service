@@ -1,22 +1,25 @@
 package by.gstu.itp.models.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Objects;
 
-public class Play {
-    private final int id;
+@Entity
+@Table(name = "plays")
+public class Play extends EntityBean {
+    @Column
     private final String title;
+    @Column
     private final int authorId;
+    @Column
     private final int genreId;
 
     public Play(int id, String title, int authorId, int genreId) {
-        this.id = id;
+        super(id);
         this.title = Objects.requireNonNull(title);
         this.authorId = authorId;
         this.genreId = genreId;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getTitle() {

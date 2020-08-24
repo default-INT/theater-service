@@ -1,18 +1,19 @@
 package by.gstu.itp.models.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.Objects;
 
-public class Genre {
-    private final int id;
+@Entity
+@Table(name = "genres")
+public class Genre extends EntityBean {
+    @Column
     private final String name;
 
     public Genre(int id, String name) {
-        this.id = id;
+        super(id);
         this.name = Objects.requireNonNull(name);
-    }
-
-    public int getId() {
-        return id;
     }
 
     public String getName() {
