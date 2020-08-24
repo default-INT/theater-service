@@ -9,7 +9,12 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorValue("2")
 public class Manager extends User {
-    public Manager(int id, String name, String password, int roleId, String email, String phone) {
-        super(id, name, password, roleId, email, phone);
+    @Override
+    protected int getDefaultRole() {
+        return 2;
+    }
+
+    public Manager(int id, String name, String password, String email, String phone) {
+        super(id, name, password,  email, phone);
     }
 }

@@ -1,6 +1,6 @@
 package by.gstu.itp.models.exceptions;
 
-public class NegativeIdException extends RuntimeException {
+public class NegativeIdException extends IllegalArgumentException {
     private final int id;
 
     public NegativeIdException(int id) {

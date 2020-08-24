@@ -1,5 +1,7 @@
 package by.gstu.itp;
 
+import by.gstu.itp.models.beans.accounts.User;
+
 import java.time.DayOfWeek;
 
 /**
