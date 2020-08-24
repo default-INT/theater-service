@@ -5,8 +5,8 @@ import Footer from "./components/footer/Footer";
 
 const root = document.getElementById('root');
 
-// root.innerHTML = '';
+root.innerHTML = '';
 
-// root.appendChild(Header);
-// root.appendChild(Content);
-// root.appendChild(Footer);
+root.appendChild(Header);
+root.appendChild(Content);
+root.appendChild(Footer);
