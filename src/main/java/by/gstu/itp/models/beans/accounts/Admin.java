@@ -7,12 +7,10 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorValue("0")
+@DiscriminatorValue("4")
 public class Admin extends User {
 
-    @Override
-    protected int getDefaultRole() {
-        return 0;
+    public Admin() {
     }
 
     public Admin(int id, String name, String password, String email, String phone) {

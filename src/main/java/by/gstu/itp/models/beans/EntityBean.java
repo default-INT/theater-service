@@ -10,7 +10,10 @@ public abstract class EntityBean implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
-    private final int id; //TODO: protected ??
+    private int id; //TODO: protected ??
+
+    public EntityBean() {
+    }
 
     public EntityBean(int id) {
         if (id < 0) {
@@ -21,5 +24,9 @@ public abstract class EntityBean implements Serializable {
 
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

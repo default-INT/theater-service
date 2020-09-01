@@ -7,12 +7,10 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorValue("1")
+@DiscriminatorValue("2")
 public class Courier extends User {
 
-    @Override
-    protected int getDefaultRole() {
-        return 1;
+    public Courier() {
     }
 
     public Courier(int id, String name, String password, String email, String phone) {

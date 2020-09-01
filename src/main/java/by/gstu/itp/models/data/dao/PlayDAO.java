@@ -2,11 +2,10 @@ package by.gstu.itp.models.data.dao;
 
 import by.gstu.itp.models.beans.Play;
 
-import java.util.List;
-import java.util.Optional;
+import java.util.stream.Stream;
 
 public interface PlayDAO {
-    Optional<List<Play>> readAll();
+    Stream<Play> readAll();
     void add(Play play);
     void update(Play play);
 }

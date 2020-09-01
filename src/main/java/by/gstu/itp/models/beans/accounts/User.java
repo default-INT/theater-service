@@ -10,8 +10,8 @@ import java.util.regex.Pattern;
 @Entity
 @Table(name = "logins")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "roleId")
-@DiscriminatorValue("3")
+@DiscriminatorColumn(name = "role_id")
+@DiscriminatorValue("1")
 public class User extends EntityBean {
     /**
      * RegEx from check email. Example = "nick@mail.com"
@@ -26,15 +26,17 @@ public class User extends EntityBean {
             Pattern.compile("^\\+\\d{3}\\(\\d{2}\\)\\d{3}-\\d{2}-\\d{2}$");
 
     @Column
-    private final String name;
+    private String name;
     @Column
-    private final String password;
-    @Column
-    private final int roleId = getDefaultRole();
+    private String password;
     @Column(unique = true)
-    private final String email;
+    private String email;
     @Column
-    private final String phone;
+    private String phone;
+
+    public User() {
+    }
+
     public User(int id, String name, String password, String email, String phone) {
         super(id);
         this.name = Objects.requireNonNull(name);
@@ -49,8 +51,20 @@ public class User extends EntityBean {
         this.phone = Objects.requireNonNull(phone);
     }
 
-    protected int getDefaultRole() {
-        return 3;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getName() {
@@ -59,10 +73,6 @@ public class User extends EntityBean {
 
     public String getPassword() {
         return password;
-    }
-
-    public int getRoleId() {
-        return roleId;
     }
 
     public String getEmail() {
