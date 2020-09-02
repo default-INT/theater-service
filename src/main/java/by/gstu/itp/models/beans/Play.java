@@ -1,17 +1,13 @@
 package by.gstu.itp.models.beans;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "plays")
 @Access(AccessType.FIELD)
-public class Play {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(unique = true)
-    private int id; //TODO: protected ??
+public class Play extends EntityBean {
 
     @Column
     private String name;
@@ -26,12 +22,14 @@ public class Play {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "genre_id")
     private Genre genre;
+    @OneToMany(mappedBy = "play")
+    private Set<Date> dates;
 
     public Play() {
     }
 
     public Play(int id, String title, Author author, Genre genre) {
-        this.id = id;
+        super(id);
         this.name = Objects.requireNonNull(title);
         this.author = Objects.requireNonNull(author);
         this.genre = Objects.requireNonNull(genre);
@@ -41,12 +39,12 @@ public class Play {
         this(0, name, author, genre);
     }
 
-    public int getId() {
-        return id;
+    public Set<Date> getDates() {
+        return dates;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setDates(Set<Date> dates) {
+        this.dates = dates;
     }
 
     public String getName() {
@@ -87,6 +85,21 @@ public class Play {
 
     public void setGenreId(int genreId) {
         this.genreId = genreId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Play play = (Play) o;
+        return name.equals(play.name) &&
+                author.equals(play.author) &&
+                genre.equals(play.genre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, author, genre);
     }
 
     @Override

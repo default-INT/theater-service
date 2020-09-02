@@ -27,4 +27,9 @@ public class XmlDomDAOFactory extends DAOFactory {
     public UserDAO getUserDAO() {
         return null;
     }
+
+    @Override
+    public OrderDAO getOrderDAO() {
+        return null;
+    }
 }

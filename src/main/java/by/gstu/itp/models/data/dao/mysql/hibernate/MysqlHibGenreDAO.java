@@ -2,6 +2,7 @@ package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Genre;
 import by.gstu.itp.models.data.dao.GenreDAO;
+import org.hibernate.Session;
 
 import java.util.stream.Stream;
 
@@ -21,6 +22,10 @@ class MysqlHibGenreDAO implements GenreDAO {
 
     @Override
     public void update(Genre genre) {
-        HibernateSession.commitHibTransaction(genre);
+        try (Session session = HibernateSession.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            session.update(genre);
+            session.getTransaction().commit();
+        }
     }
 }

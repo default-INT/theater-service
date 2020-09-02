@@ -13336,3 +13336,100 @@ java.sql.SQLException: No suitable driver
 [WARN ] 2020-09-02 13:32:10.175 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1292 ms 
 [DEBUG] 2020-09-02 13:41:57.055 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 717 ms 
 [WARN ] 2020-09-02 13:41:57.547 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1209 ms 
+[DEBUG] 2020-09-02 14:53:25.425 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 784 ms 
+[WARN ] 2020-09-02 14:53:26.047 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1406 ms 
+[DEBUG] 2020-09-02 14:53:27.307 [main] by.gstu.itp.models.data.dao.mysql.hibernate.MysqlHibPlayDAOTest - [Date{id=1, playId=1, date=2020-02-03, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}, Date{id=3, playId=1, date=2020-02-27, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}, Date{id=2, playId=1, date=2020-02-15, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}] | 2666 ms 
+[DEBUG] 2020-09-02 16:43:40.492 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1003 ms 
+[WARN ] 2020-09-02 16:43:41.095 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1606 ms 
+[ERROR] 2020-09-02 16:43:41.801 [main] by.gstu.itp.models.data.dao.mysql.hibernate.HibernateSession - Repeated column in mapping for entity: by.gstu.itp.models.beans.Order column: date_id (should be mapped with insert="false" update="false") | 2312 ms 
+[DEBUG] 2020-09-02 16:44:16.388 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 723 ms 
+[WARN ] 2020-09-02 16:44:16.957 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1292 ms 
+[ERROR] 2020-09-02 16:44:17.467 [main] by.gstu.itp.models.data.dao.mysql.hibernate.HibernateSession - Repeated column in mapping for entity: by.gstu.itp.models.beans.Order column: user_id (should be mapped with insert="false" update="false") | 1802 ms 
+[DEBUG] 2020-09-02 16:44:37.461 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 735 ms 
+[WARN ] 2020-09-02 16:44:37.977 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1251 ms 
+[DEBUG] 2020-09-02 16:45:26.964 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 711 ms 
+[WARN ] 2020-09-02 16:45:27.453 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1200 ms 
+[DEBUG] 2020-09-02 16:45:28.610 [main] by.gstu.itp.models.data.dao.mysql.hibernate.MysqlHibOrderDAOTest - [Order{row=1, seat=1, userId=1, dateId=1, price=6, ticketCategory=CHEAP_TICKET, user=User{id1, name='Solodkov', password='1806', email='solodkov@gmail.com', phone='+375(29)315-74-25'}, date=Date{id=1, playId=1, date=2020-02-03, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}}, Order{row=3, seat=10, userId=1, dateId=1, price=6, ticketCategory=EXPENSIVE_TICKET, user=User{id1, name='Solodkov', password='1806', email='solodkov@gmail.com', phone='+375(29)315-74-25'}, date=Date{id=1, playId=1, date=2020-02-03, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}}] | 2357 ms 
+[DEBUG] 2020-09-02 16:48:09.134 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 701 ms 
+[WARN ] 2020-09-02 16:48:09.625 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1192 ms 
+[WARN ] 2020-09-02 16:48:10.736 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1048, SQLState: 23000 | 2303 ms 
+[ERROR] 2020-09-02 16:48:10.737 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Column 'price' cannot be null | 2304 ms 
+[ERROR] 2020-09-02 16:48:10.739 [main] by.gstu.itp.models.data.dao.mysql.hibernate.HibernateSession - org.hibernate.exception.ConstraintViolationException: could not execute statement | 2306 ms 
+[DEBUG] 2020-09-02 16:54:38.679 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 727 ms 
+[WARN ] 2020-09-02 16:54:39.195 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1243 ms 
+[DEBUG] 2020-09-02 16:55:08.088 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 630 ms 
+[WARN ] 2020-09-02 16:55:08.597 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1139 ms 
+[DEBUG] 2020-09-02 16:56:37.067 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 705 ms 
+[WARN ] 2020-09-02 16:56:37.623 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1261 ms 
+[DEBUG] 2020-09-02 17:00:13.062 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 836 ms 
+[WARN ] 2020-09-02 17:00:13.700 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1474 ms 
+[DEBUG] 2020-09-02 17:01:46.033 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1245 ms 
+[WARN ] 2020-09-02 17:01:46.641 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1853 ms 
+[DEBUG] 2020-09-02 17:02:45.979 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1099 ms 
+[WARN ] 2020-09-02 17:02:46.492 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1612 ms 
+[DEBUG] 2020-09-02 17:05:24.792 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 714 ms 
+[WARN ] 2020-09-02 17:05:25.319 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1241 ms 
+[DEBUG] 2020-09-02 17:06:25.877 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 674 ms 
+[WARN ] 2020-09-02 17:06:26.406 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1203 ms 
+[DEBUG] 2020-09-02 17:06:41.525 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 951 ms 
+[WARN ] 2020-09-02 17:06:42.047 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1473 ms 
+[DEBUG] 2020-09-02 17:16:23.744 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 684 ms 
+[WARN ] 2020-09-02 17:16:24.296 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1236 ms 
+[DEBUG] 2020-09-02 17:16:39.859 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 919 ms 
+[WARN ] 2020-09-02 17:16:40.373 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1433 ms 
+[DEBUG] 2020-09-02 17:17:40.106 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 936 ms 
+[WARN ] 2020-09-02 17:17:40.681 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1511 ms 
+[DEBUG] 2020-09-02 17:17:53.316 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 880 ms 
+[WARN ] 2020-09-02 17:17:53.788 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1352 ms 
+[DEBUG] 2020-09-02 17:20:18.341 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 692 ms 
+[WARN ] 2020-09-02 17:20:18.852 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1203 ms 
+[ERROR] 2020-09-02 17:20:20.081 [main] org.hibernate.proxy.AbstractLazyInitializer - HHH000485: Illegally attempted to associate a proxy for entity [by.gstu.itp.models.beans.accounts.User] with id [1] with two open sessions. | 2432 ms 
+[DEBUG] 2020-09-02 17:38:21.452 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 2408 ms 
+[WARN ] 2020-09-02 17:38:22.307 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 3263 ms 
+[DEBUG] 2020-09-02 17:41:29.065 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 949 ms 
+[WARN ] 2020-09-02 17:41:29.749 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1633 ms 
+[WARN ] 2020-09-02 17:41:31.356 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3240 ms 
+[ERROR] 2020-09-02 17:41:31.356 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3240 ms 
+[DEBUG] 2020-09-02 17:42:00.062 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1316 ms 
+[WARN ] 2020-09-02 17:42:00.747 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 2001 ms 
+[WARN ] 2020-09-02 17:42:02.563 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3817 ms 
+[ERROR] 2020-09-02 17:42:02.564 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3818 ms 
+[DEBUG] 2020-09-02 17:42:15.148 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1265 ms 
+[WARN ] 2020-09-02 17:42:15.894 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 2011 ms 
+[WARN ] 2020-09-02 17:42:17.741 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3858 ms 
+[ERROR] 2020-09-02 17:42:17.742 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3859 ms 
+[DEBUG] 2020-09-02 17:42:39.437 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1183 ms 
+[WARN ] 2020-09-02 17:42:40.128 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1874 ms 
+[WARN ] 2020-09-02 17:42:41.982 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3728 ms 
+[ERROR] 2020-09-02 17:42:41.982 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3728 ms 
+[DEBUG] 2020-09-02 17:43:01.570 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1355 ms 
+[WARN ] 2020-09-02 17:43:02.300 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 2085 ms 
+[WARN ] 2020-09-02 17:43:13.459 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 13244 ms 
+[ERROR] 2020-09-02 17:43:13.460 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 13245 ms 
+[DEBUG] 2020-09-02 17:43:23.797 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1191 ms 
+[WARN ] 2020-09-02 17:43:24.501 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1895 ms 
+[WARN ] 2020-09-02 17:44:16.168 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 53562 ms 
+[ERROR] 2020-09-02 17:44:16.168 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 53562 ms 
+[DEBUG] 2020-09-02 17:45:24.417 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 996 ms 
+[WARN ] 2020-09-02 17:45:25.140 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1719 ms 
+[WARN ] 2020-09-02 17:45:26.660 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3239 ms 
+[ERROR] 2020-09-02 17:45:26.660 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3239 ms 
+[DEBUG] 2020-09-02 17:45:48.776 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 999 ms 
+[WARN ] 2020-09-02 17:45:49.437 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1660 ms 
+[WARN ] 2020-09-02 17:45:50.975 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3198 ms 
+[ERROR] 2020-09-02 17:45:50.975 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3198 ms 
+[DEBUG] 2020-09-02 17:46:12.835 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 966 ms 
+[WARN ] 2020-09-02 17:46:13.520 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1651 ms 
+[WARN ] 2020-09-02 17:46:15.043 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: S1000 | 3174 ms 
+[ERROR] 2020-09-02 17:46:15.044 [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Operation not allowed after ResultSet closed | 3175 ms 
+[DEBUG] 2020-09-02 17:47:10.189 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 900 ms 
+[WARN ] 2020-09-02 17:47:10.853 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1564 ms 
+[DEBUG] 2020-09-02 17:47:12.327 [main] by.gstu.itp.models.data.dao.mysql.hibernate.MysqlHibOrderDAOTest - [Order{row=1, seat=1, userId=1, dateId=1, price=6, ticketCategory=CHEAP_TICKET, user=User{id1, name='Solodkov', password='1806', email='solodkov@gmail.com', phone='+375(29)315-74-25'}, date=Date{id=1, playId=1, date=2020-02-03, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}}, Order{row=3, seat=10, userId=1, dateId=1, price=6, ticketCategory=EXPENSIVE_TICKET, user=User{id1, name='Solodkov', password='1806', email='solodkov@gmail.com', phone='+375(29)315-74-25'}, date=Date{id=1, playId=1, date=2020-02-03, play=Play{id=1, title='Synthesizer love', authorId=1, genreId=1, author=Author{id=1, name='A. Ekborn'}, genre=Genre{id=1, name='Comedy'}}}}] | 3038 ms 
+[DEBUG] 2020-09-02 17:47:28.771 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 936 ms 
+[WARN ] 2020-09-02 17:47:29.425 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1590 ms 
+[DEBUG] 2020-09-02 17:47:43.305 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1311 ms 
+[WARN ] 2020-09-02 17:47:43.989 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1995 ms 
+[DEBUG] 2020-09-02 17:57:52.048 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1101 ms 
+[WARN ] 2020-09-02 17:57:52.732 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 1785 ms 
+[DEBUG] 2020-09-02 17:59:25.446 [main] org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider | 1165 ms 
+[WARN ] 2020-09-02 17:59:26.291 [main] org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!) | 2010 ms 

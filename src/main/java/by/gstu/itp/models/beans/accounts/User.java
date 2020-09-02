@@ -76,7 +76,8 @@ public class User extends EntityBean {
      * @param password
      */
     public User(String email, String password) {
-        this(0, "undefined", password, email, "+375(00)000-00-00");
+        this(0, "undefined", password, email,
+                "+375(00)000-00-00");
     }
 
     public void setName(String name) {
@@ -109,6 +110,22 @@ public class User extends EntityBean {
 
     public String getPhone() {
         return phone;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return name.equals(user.name) &&
+                password.equals(user.password) &&
+                email.equals(user.email) &&
+                phone.equals(user.phone);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, password, email, phone);
     }
 
     @Override

@@ -2,6 +2,7 @@ package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Author;
 import by.gstu.itp.models.data.dao.AuthorDAO;
+import org.hibernate.Session;
 
 import java.util.stream.Stream;
 
@@ -20,6 +21,10 @@ class MysqlHibAuthorDAO implements AuthorDAO {
 
     @Override
     public void update(Author author) {
-        HibernateSession.commitHibTransaction(author);
+        try (Session session = HibernateSession.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            session.update(author);
+            session.getTransaction().commit();
+        }
     }
 }

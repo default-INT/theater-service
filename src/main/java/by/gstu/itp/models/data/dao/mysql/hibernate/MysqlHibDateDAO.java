@@ -2,6 +2,7 @@ package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.data.dao.DateDAO;
+import org.hibernate.Session;
 
 import java.util.stream.Stream;
 
@@ -21,6 +22,10 @@ public class MysqlHibDateDAO implements DateDAO {
 
     @Override
     public void update(Date date) {
-        HibernateSession.commitHibTransaction(date);
+        try (Session session = HibernateSession.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            session.update(date);
+            session.getTransaction().commit();
+        }
     }
 }

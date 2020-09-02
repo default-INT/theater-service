@@ -3,6 +3,7 @@ package by.gstu.itp.models.beans;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "dates")
@@ -16,6 +17,8 @@ public class Date extends EntityBean {
     @ManyToOne
     @JoinColumn(name = "play_id")
     private Play play;
+    @OneToMany(mappedBy = "date")
+    private Set<Order> orders;
 
     public Date() {
     }
@@ -24,6 +27,14 @@ public class Date extends EntityBean {
         super(id);
         this.play = Objects.requireNonNull(play);
         this.date = Objects.requireNonNull(date);
+    }
+
+    public Set<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(Set<Order> orders) {
+        this.orders = orders;
     }
 
     public Date(Play play, LocalDate date) {
@@ -52,6 +63,20 @@ public class Date extends EntityBean {
 
     public LocalDate getDate() {
         return LocalDate.from(date);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Date date1 = (Date) o;
+        return date.equals(date1.date) &&
+                play.equals(date1.play);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, play);
     }
 
     @Override

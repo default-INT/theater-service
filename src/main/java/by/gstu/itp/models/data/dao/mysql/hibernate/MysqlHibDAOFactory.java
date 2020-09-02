@@ -27,4 +27,9 @@ public class MysqlHibDAOFactory extends DAOFactory {
     public UserDAO getUserDAO() {
         return new MysqlHibUserDAO();
     }
+
+    @Override
+    public OrderDAO getOrderDAO() {
+        return new MysqlHibOrderDAO();
+    }
 }

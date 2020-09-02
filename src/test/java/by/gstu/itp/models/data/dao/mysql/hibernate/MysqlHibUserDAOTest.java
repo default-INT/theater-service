@@ -55,5 +55,8 @@ public class MysqlHibUserDAOTest {
         user.setName("Solodkov");
         DAOFactory.getDAOFactory(DB).getUserDAO().update(user);
         assertEquals(user.getName(), "Solodkov");
+        user.setName("Solodkov M.A.");
+        DAOFactory.getDAOFactory(DB).getUserDAO().update(user);
+        assertEquals(user.getName(), "Solodkov M.A.");
     }
 }

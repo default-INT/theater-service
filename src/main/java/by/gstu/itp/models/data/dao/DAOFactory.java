@@ -13,6 +13,7 @@ public abstract class DAOFactory {
     public abstract GenreDAO getGenreDAO();
     public abstract PlayDAO getPlayDAO();
     public abstract UserDAO getUserDAO();
+    public abstract OrderDAO getOrderDAO();
 
     private static DAOFactory getDAOFactory(Database db) {
         return switch (db) {

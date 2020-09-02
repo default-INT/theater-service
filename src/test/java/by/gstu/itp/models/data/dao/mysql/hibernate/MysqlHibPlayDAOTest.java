@@ -1,6 +1,7 @@
 package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Author;
+import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.beans.Genre;
 import by.gstu.itp.models.beans.Play;
 import by.gstu.itp.models.data.dao.DAOFactory;
@@ -46,6 +47,17 @@ public class MysqlHibPlayDAOTest {
                 .getGenre();
         logger.debug(genre);
         assertNotNull(genre);
+    }
+
+    @Test
+    public void readDatesFromPlay() {
+        var dates = DAOFactory.getDAOFactory(DB).getPlayDAO()
+                .readAll()
+                .findFirst()
+                .orElseThrow(NullPointerException::new)
+                .getDates();
+        logger.debug(dates);
+        assertNotNull(dates);
     }
 
     @Test

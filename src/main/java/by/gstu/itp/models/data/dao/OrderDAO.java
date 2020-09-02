@@ -1,0 +1,12 @@
+package by.gstu.itp.models.data.dao;
+
+import by.gstu.itp.models.beans.Order;
+
+import java.util.stream.Stream;
+
+public interface OrderDAO {
+    Stream<Order> readAll();
+    void add(Order order);
+    void remove(Order order);
+    void update(Order newOrder);
+}

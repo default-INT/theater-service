@@ -35,6 +35,19 @@ create table logins (
     phone varchar(20) not null
 );
 
+create table orders (
+    id int auto_increment  unique  not null primary key ,
+    row_id int not null ,
+    seat int not null ,
+    user_id int not null,
+    date_id int not null ,
+    ticket_category varchar(60) not null ,
+    price decimal not null ,
+    foreign key (user_id) references logins (id),
+    foreign key (date_id) references dates (id)
+);
+
+
 insert into logins (name, password, role_id, email, phone) VALUES ('Solodkov M.A.', '1806', 1, 'solodkov@gmail.com',
                                                                    '+375(29)315-74-25');
 insert into logins (name, password, role_id, email, phone) VALUES ('Стольный Д.А.', '1806', 2, 'sema@gmail.com',
@@ -73,3 +86,8 @@ insert into dates (play_id, date) VALUES (2, '2020-02-20');
 
 insert into dates (play_id, date) VALUES (2, '2020-02-17');
 insert into dates (play_id, date) VALUES (2, '2020-02-24');
+
+insert into orders (row_id, seat, user_id, date_id, ticket_category, price)
+VALUES (1, 1, 1, 1, 'CHEAP_TICKET', 6);
+insert into orders (row_id, seat, user_id, date_id, ticket_category, price)
+VALUES (3, 10, 1, 1, 'EXPENSIVE_TICKET', 6);

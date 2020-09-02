@@ -35,14 +35,7 @@ public class MysqlHibUserDAO implements UserDAO {
     public void update(User newUser) {
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             session.beginTransaction();
-            User user = session.get(newUser.getClass(), newUser.getId());
-
-            user.setName(newUser.getName());
-            user.setEmail(newUser.getEmail());
-            user.setPassword(newUser.getPassword());
-            user.setPhone(newUser.getPhone());
-
-            session.update(user);
+            session.update(newUser);
             session.getTransaction().commit();
         }
     }
