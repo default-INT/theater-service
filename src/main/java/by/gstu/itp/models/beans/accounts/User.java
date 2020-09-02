@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 @Entity
 @Table(name = "logins")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@DiscriminatorColumn(name = "role_id")
+@DiscriminatorColumn(name = "role_id", discriminatorType = DiscriminatorType.INTEGER)
 @DiscriminatorValue("1")
 public class User extends EntityBean {
     /**
@@ -37,6 +37,14 @@ public class User extends EntityBean {
     public User() {
     }
 
+    /**
+     *
+     * @param id
+     * @param name
+     * @param password
+     * @param email
+     * @param phone
+     */
     public User(int id, String name, String password, String email, String phone) {
         super(id);
         this.name = Objects.requireNonNull(name);
@@ -49,6 +57,26 @@ public class User extends EntityBean {
             throw new PatternException(phone, PHONE_PATTERN);
         }
         this.phone = Objects.requireNonNull(phone);
+    }
+
+    /**
+     *
+     * @param name
+     * @param password
+     * @param email
+     * @param phone
+     */
+    public User(String name, String password, String email, String phone) {
+        this(0, name, password, email, phone);
+    }
+
+    /**
+     *
+     * @param email
+     * @param password
+     */
+    public User(String email, String password) {
+        this(0, "undefined", password, email, "+375(00)000-00-00");
     }
 
     public void setName(String name) {
@@ -81,5 +109,16 @@ public class User extends EntityBean {
 
     public String getPhone() {
         return phone;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id" + getId() +
+                ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }

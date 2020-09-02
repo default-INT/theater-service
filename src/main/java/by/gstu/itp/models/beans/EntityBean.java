@@ -12,8 +12,7 @@ public abstract class EntityBean implements Serializable {
     @Column(unique = true)
     private int id; //TODO: protected ??
 
-    public EntityBean() {
-    }
+    public EntityBean() { }
 
     public EntityBean(int id) {
         if (id < 0) {
@@ -28,5 +27,12 @@ public abstract class EntityBean implements Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "EntityBean{" +
+                "id=" + id +
+                '}';
     }
 }

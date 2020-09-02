@@ -1,14 +1,11 @@
-package by.gstu.itp.models.data.dao.postgre.hibernate;
+package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Author;
 import by.gstu.itp.models.data.dao.AuthorDAO;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.stream.Stream;
 
-class PostgresHibAuthorDAO implements AuthorDAO {
-    private final static Logger logger = LogManager.getLogger();
+class MysqlHibAuthorDAO implements AuthorDAO {
 
     @Override
     public Stream<Author> readAll() {

@@ -9,20 +9,30 @@ import java.util.Objects;
  */
 @Entity
 @Table(name="authors")
-public class Author extends EntityBean {
+@Access(AccessType.FIELD)
+public class Author {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true)
+    private int id; //TODO: protected ??
 
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "author")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "author")
     private List<Play> plays;
 
     public Author() {
     }
 
     public Author(int id, String name) {
-        super(id);
+        this.id = id;
         this.name = Objects.requireNonNull(name);
+    }
+
+    public Author(String name) {
+        this(0, name);
     }
 
     public List<Play> getPlays() {
@@ -33,11 +43,27 @@ public class Author extends EntityBean {
         this.plays = plays;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "id=" + getId() +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

@@ -1,11 +1,11 @@
 package by.gstu.itp.models.data.dao;
 
-import by.gstu.itp.models.data.dao.postgre.hibernate.PostgresHibDAOFactory;
+import by.gstu.itp.models.data.dao.mysql.hibernate.MysqlHibDAOFactory;
 import by.gstu.itp.models.data.dao.xml.dom.XmlDomDAOFactory;
 
 public abstract class DAOFactory {
     private enum Database {
-        POSTGRES_HIB, XML_DOM
+        MYSQL_HIB, XML_DOM
     }
 
     public abstract AuthorDAO getAuthorDAO();
@@ -14,14 +14,18 @@ public abstract class DAOFactory {
     public abstract PlayDAO getPlayDAO();
     public abstract UserDAO getUserDAO();
 
-    public static DAOFactory getDAOFactory(Database db) {
+    private static DAOFactory getDAOFactory(Database db) {
         return switch (db) {
             case XML_DOM -> new XmlDomDAOFactory();
-            case POSTGRES_HIB -> new PostgresHibDAOFactory();
+            case MYSQL_HIB -> new MysqlHibDAOFactory();
         };
     }
 
+    public static DAOFactory getDAOFactory(String db) {
+        return getDAOFactory(Database.valueOf(db));
+    }
+
     public static DAOFactory getDAOFactory() {
-        return getDAOFactory(Database.POSTGRES_HIB);
+        return getDAOFactory(Database.MYSQL_HIB);
     }
 }

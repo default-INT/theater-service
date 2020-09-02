@@ -1,19 +1,17 @@
 package by.gstu.itp.models.beans;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
 @Entity
 @Table(name = "genres")
+@Access(AccessType.FIELD)
 public class Genre extends EntityBean {
     @Column
     private String name;
 
-    @OneToMany(mappedBy = "genre")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "genre")
     private List<Play> plays;
 
     public Genre() {
@@ -22,6 +20,10 @@ public class Genre extends EntityBean {
     public Genre(int id, String name) {
         super(id);
         this.name = Objects.requireNonNull(name);
+    }
+
+    public Genre(String name) {
+        this(0, name);
     }
 
     public List<Play> getPlays() {
@@ -38,5 +40,13 @@ public class Genre extends EntityBean {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Genre{" +
+                "id=" + getId() +
+                ", name='" + name + '\'' +
+                '}';
     }
 }

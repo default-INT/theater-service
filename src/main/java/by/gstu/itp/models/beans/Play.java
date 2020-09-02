@@ -6,35 +6,51 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "plays")
-public class Play extends EntityBean {
+@Access(AccessType.FIELD)
+public class Play {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true)
+    private int id; //TODO: protected ??
+
     @Column
-    private String title;
-    @Column(name = "author_id")
+    private String name;
+    @Column(name = "author_id", updatable = false, insertable = false)
     private int authorId;
-    @Column(name = "genre_id")
+    @Column(name = "genre_id", updatable = false, insertable = false)
     private int genreId;
 
-    @ManyToOne
-    @JoinColumn(name = "author_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "author_id", nullable = false)
     private Author author;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "genre_id")
     private Genre genre;
-    @OneToMany(mappedBy = "play")
-    private List<Date> dates;
 
     public Play() {
     }
 
-    public Play(int id, String title, int authorId, int genreId) {
-        super(id);
-        this.title = Objects.requireNonNull(title);
-        this.authorId = authorId;
-        this.genreId = genreId;
+    public Play(int id, String title, Author author, Genre genre) {
+        this.id = id;
+        this.name = Objects.requireNonNull(title);
+        this.author = Objects.requireNonNull(author);
+        this.genre = Objects.requireNonNull(genre);
     }
 
-    public String getTitle() {
-        return title;
+    public Play(String name, Author author, Genre genre) {
+        this(0, name, author, genre);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getAuthorId() {
@@ -57,20 +73,12 @@ public class Play extends EntityBean {
         this.genre = genre;
     }
 
-    public List<Date> getDates() {
-        return dates;
-    }
-
-    public void setDates(List<Date> dates) {
-        this.dates = dates;
-    }
-
     public void setAuthor(Author author) {
         this.author = author;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setAuthorId(int authorId) {
@@ -79,5 +87,17 @@ public class Play extends EntityBean {
 
     public void setGenreId(int genreId) {
         this.genreId = genreId;
+    }
+
+    @Override
+    public String toString() {
+        return "Play{" +
+                "id=" + getId() +
+                ", title='" + name + '\'' +
+                ", authorId=" + authorId +
+                ", genreId=" + genreId +
+                ", author=" + author +
+                ", genre=" + genre +
+                '}';
     }
 }

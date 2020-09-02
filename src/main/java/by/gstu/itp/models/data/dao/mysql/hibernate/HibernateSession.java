@@ -1,4 +1,4 @@
-package by.gstu.itp.models.data.dao.postgre.hibernate;
+package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

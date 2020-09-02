@@ -1,11 +1,11 @@
-package by.gstu.itp.models.data.dao.postgre.hibernate;
+package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.data.dao.DateDAO;
 
 import java.util.stream.Stream;
 
-public class PostgresHibDateDAO implements DateDAO {
+public class MysqlHibDateDAO implements DateDAO {
     @Override
     public Stream<Date> readAll() {
         return HibernateSession.getSessionFactory()

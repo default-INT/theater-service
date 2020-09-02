@@ -1,11 +1,11 @@
-package by.gstu.itp.models.data.dao.postgre.hibernate;
+package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Play;
 import by.gstu.itp.models.data.dao.PlayDAO;
 
 import java.util.stream.Stream;
 
-class PostgresHibPlayDAO implements PlayDAO {
+class MysqlHibPlayDAO implements PlayDAO {
     @Override
     public Stream<Play> readAll() {
         return HibernateSession.getSessionFactory()

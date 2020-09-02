@@ -6,8 +6,9 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "dates")
+@Access(AccessType.FIELD)
 public class Date extends EntityBean {
-    @Column(name = "play_id")
+    @Column(name = "play_id", updatable = false, insertable = false)
     private int playId;
     @Column
     private LocalDate date;
@@ -19,10 +20,14 @@ public class Date extends EntityBean {
     public Date() {
     }
 
-    public Date(int id, int playId, LocalDate date) {
+    public Date(int id, Play play, LocalDate date) {
         super(id);
-        this.playId = playId;
+        this.play = Objects.requireNonNull(play);
         this.date = Objects.requireNonNull(date);
+    }
+
+    public Date(Play play, LocalDate date) {
+        this(0, play, date);
     }
 
     public void setPlayId(int playId) {
@@ -47,5 +52,15 @@ public class Date extends EntityBean {
 
     public LocalDate getDate() {
         return LocalDate.from(date);
+    }
+
+    @Override
+    public String toString() {
+        return "Date{" +
+                "id=" + getId() +
+                ", playId=" + playId +
+                ", date=" + date +
+                ", play=" + play +
+                '}';
     }
 }

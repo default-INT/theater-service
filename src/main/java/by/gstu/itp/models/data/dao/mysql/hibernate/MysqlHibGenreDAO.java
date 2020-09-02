@@ -1,11 +1,11 @@
-package by.gstu.itp.models.data.dao.postgre.hibernate;
+package by.gstu.itp.models.data.dao.mysql.hibernate;
 
 import by.gstu.itp.models.beans.Genre;
 import by.gstu.itp.models.data.dao.GenreDAO;
 
 import java.util.stream.Stream;
 
-class PostgresHibGenreDAO implements GenreDAO {
+class MysqlHibGenreDAO implements GenreDAO {
     @Override
     public Stream<Genre> readAll() {
         return HibernateSession.getSessionFactory()
