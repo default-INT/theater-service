@@ -54,15 +54,8 @@ public class Order extends EntityBean {
 
     public Order() {}
 
-    /**
-     *
-     * @param row
-     * @param seat
-     * @param user
-     * @param date
-     */
-    public Order(int row, int seat, User user, Date date) {
-        super(0);
+    public Order(int id, int row, int seat, User user, Date date) {
+        super(id);
         if (row <= 0) {
             throw new IllegalArgumentException();
         }
@@ -75,6 +68,17 @@ public class Order extends EntityBean {
         this.date = Objects.requireNonNull(date);
         this.ticketCategory = TicketCategory.DEFAULT_TICKET;
         this.price = DEFAULT_PRICE.multiply(BigDecimal.valueOf(ticketCategory.getDiscount()));
+    }
+
+    /**
+     *
+     * @param row
+     * @param seat
+     * @param user
+     * @param date
+     */
+    public Order(int row, int seat, User user, Date date) {
+        this(0, row, seat, user, date);
     }
 
     public int getDateId() {

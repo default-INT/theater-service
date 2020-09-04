@@ -44,14 +44,14 @@ public class MysqlHibOrderDAOTest {
         assertNotNull(orders);
     }
 
-    @Test
+    // @Test
     public void add() {
         Order order = new Order(15, 15, DEFAULT_USER, DEFAULT_DATE);
         DAOFactory.getDAOFactory(DB).getOrderDAO().add(order);
         assertTrue(true);
     }
 
-    @Test
+    // @Test
     public void addSQLException() {
         assertThrows(IllegalArgumentException.class, () -> {
             Order order = new Order(15, 15, DEFAULT_USER, DEFAULT_DATE);
@@ -59,7 +59,7 @@ public class MysqlHibOrderDAOTest {
         });
     }
 
-    @Test
+    // @Test
     public void remove() {
         Order order = new Order(15, 15, DEFAULT_USER, DEFAULT_DATE);
         var removeOrder = DAOFactory.getDAOFactory(DB).getOrderDAO()

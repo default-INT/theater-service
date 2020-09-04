@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class MysqlHibDAOFactoryTest {
 
-    private static final String db = "POSTGRES_HIB";
+    private static final String db = "MYSQL_HIB";
 
     @Test
     public void getAuthorDAO() {

@@ -36,7 +36,7 @@ public class MysqlHibAuthorDAOTest {
         assertNotNull(plays);
     }
 
-    @Test
+    // @Test
     public void addTestAuthor() {
         Author author = new Author("A. Pushkin");
         DAOFactory.getDAOFactory(DB).getAuthorDAO()

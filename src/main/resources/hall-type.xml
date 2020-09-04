@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hall>
+    <rows>
+        <row seats="8" />
+        <row seats="8" />
+        <row seats="10" />
+        <row seats="10" />
+        <row seats="14" />
+        <row seats="14" />
+    </rows>
+    <ticketCategories>
+        <category type="CheapTicket" rowStart="1" rowEnd="2"/>
+        <category type="DefaultTicket" rowStart="3" rowEnd="4"/>
+        <category type="DefaultTicket" rowStart="4" rowEnd="6"/>
+    </ticketCategories>
+</hall>

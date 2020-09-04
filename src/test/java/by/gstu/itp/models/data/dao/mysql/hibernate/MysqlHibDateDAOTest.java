@@ -38,7 +38,7 @@ public class MysqlHibDateDAOTest {
         assertNotNull(play);
     }
 
-    @Test
+    // @Test
     public void add() {
         Date date = new Date(
                 DAOFactory.getDAOFactory(DB).getPlayDAO()

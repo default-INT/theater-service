@@ -1,5 +1,7 @@
 package by.gstu.itp.models.beans.accounts;
 
+import com.google.gson.JsonObject;
+
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.Inheritance;
@@ -15,5 +17,9 @@ public class Courier extends User {
 
     public Courier(int id, String name, String password, String email, String phone) {
         super(id, name, password, email, phone);
+    }
+
+    public Courier(JsonObject jsonObject) {
+        super(jsonObject);
     }
 }

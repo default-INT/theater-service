@@ -36,9 +36,9 @@ public class MysqlHibUserDAOTest {
         assertEquals(user.getClass(), User.class);
     }
 
-    @Test
+    //@Test
     public void add() {
-        User newUser = new User("Test mail", "1806", "testmail@gmail.com",
+        User newUser = new User("Test mail", "1806", "solodkov@gmail.com",
                 "+375(29)971-54-23");
         DAOFactory.getDAOFactory(DB).getUserDAO().add(newUser);
         assertTrue(true);

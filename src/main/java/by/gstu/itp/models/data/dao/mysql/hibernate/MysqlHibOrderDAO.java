@@ -4,6 +4,7 @@ import by.gstu.itp.models.beans.Order;
 import by.gstu.itp.models.data.dao.OrderDAO;
 import org.hibernate.Session;
 
+import java.util.Collection;
 import java.util.stream.Stream;
 
 public class MysqlHibOrderDAO implements OrderDAO {
@@ -26,6 +27,11 @@ public class MysqlHibOrderDAO implements OrderDAO {
             throw new IllegalArgumentException(); //TODO: new exception
         }
         HibernateSession.commitHibTransaction(order);
+    }
+
+    @Override
+    public void addAll(Collection<Order> orders) {
+        orders.forEach(this::add);
     }
 
     @Override

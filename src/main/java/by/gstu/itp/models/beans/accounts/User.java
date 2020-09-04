@@ -2,6 +2,7 @@ package by.gstu.itp.models.beans.accounts;
 
 import by.gstu.itp.models.beans.EntityBean;
 import by.gstu.itp.models.exceptions.PatternException;
+import com.google.gson.JsonObject;
 
 import javax.persistence.*;
 import java.util.Objects;
@@ -78,6 +79,20 @@ public class User extends EntityBean {
     public User(String email, String password) {
         this(0, "undefined", password, email,
                 "+375(00)000-00-00");
+    }
+
+    /**
+     *
+     * @param jsonObject
+     */
+    public User(JsonObject jsonObject) {
+        this(
+                jsonObject.get("id").getAsInt(),
+                jsonObject.get("name").getAsString(),
+                jsonObject.get("password").getAsString(),
+                jsonObject.get("email").getAsString(),
+                jsonObject.get("phone").getAsString()
+        );
     }
 
     public void setName(String name) {

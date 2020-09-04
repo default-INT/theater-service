@@ -60,7 +60,7 @@ public class MysqlHibPlayDAOTest {
         assertNotNull(dates);
     }
 
-    @Test
+    // @Test
     public void add() {
         Genre genre = DAOFactory.getDAOFactory(DB)
                 .getGenreDAO()

@@ -1,11 +1,10 @@
 package by.gstu.itp.models.data.dao;
 
 import by.gstu.itp.models.data.dao.mysql.hibernate.MysqlHibDAOFactory;
-import by.gstu.itp.models.data.dao.xml.dom.XmlDomDAOFactory;
 
 public abstract class DAOFactory {
     private enum Database {
-        MYSQL_HIB, XML_DOM
+        MYSQL_HIB
     }
 
     public abstract AuthorDAO getAuthorDAO();
@@ -17,7 +16,6 @@ public abstract class DAOFactory {
 
     private static DAOFactory getDAOFactory(Database db) {
         return switch (db) {
-            case XML_DOM -> new XmlDomDAOFactory();
             case MYSQL_HIB -> new MysqlHibDAOFactory();
         };
     }

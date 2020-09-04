@@ -2,19 +2,14 @@ package by.gstu.itp.models.exceptions;
 
 import by.gstu.itp.models.beans.accounts.User;
 
-public class LogInFailedException extends RuntimeException {
-    private final User user;
+public class LogInFailedException extends AccountAccessException {
 
     public LogInFailedException(User user) {
-        this.user = user;
-    }
-
-    public User getUser() {
-        return user;
+        super(user);
     }
 
     @Override
-    public String getMessage() {
-        return super.getMessage() + ". LogIn failed from user=" + user;
+    protected String accountErrorMessage() {
+        return ". LogIn failed from user=";
     }
 }
