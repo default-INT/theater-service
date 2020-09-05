@@ -2,8 +2,10 @@ package by.gstu.itp.controllers;
 
 import by.gstu.itp.controllers.services.HttpGetService;
 import by.gstu.itp.controllers.services.HttpPostService;
-import by.gstu.itp.controllers.services.UtilFactory;
+import by.gstu.itp.models.exceptions.*;
 import com.google.gson.JsonObject;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,38 +14,27 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 @WebServlet(urlPatterns = "/data-api/*")
 public class DataAPIServlet extends HttpServlet {
 
-    private enum UrlPathGetToArg {
-        ORDERED_TICKETS(HttpGetService::getAllTickets);
-
-        private final Function<Integer, String> func;
-
-        UrlPathGetToArg(Function<Integer, String> func) {
-            this.func = func;
-        }
-
-        String getAnswer(int id) {
-            return func.apply(id);
-        }
-    }
+    private static final Logger logger = LogManager.getLogger();
 
     private enum UrlPathGet {
         PLAYS(HttpGetService::getAllPlays),
-        AUTHORS(HttpGetService::getAllAuthors);
+        AUTHORS(HttpGetService::getAllAuthors),
+        ORDERED_TICKETS(HttpGetService::getAllTickets),
+        AUTH(HttpGetService::getAuthUser),
+        DATE(HttpGetService::getDate);
 
-        private final Supplier<String> dataGetter;
+        private final Function<HttpServletRequest, String> requestHandler;
 
-        UrlPathGet(Supplier<String> supplier) {
-            dataGetter = supplier;
+        UrlPathGet(Function<HttpServletRequest, String> requestHandler) {
+            this.requestHandler = requestHandler;
         }
 
-
-        String getAnswer() {
-            return dataGetter.get();
+        String getAnswer(HttpServletRequest request) {
+            return requestHandler.apply(request);
         }
     }
 
@@ -51,16 +42,17 @@ public class DataAPIServlet extends HttpServlet {
         LOGIN(HttpPostService::logIn),
         REG(HttpPostService::registration),
         DATE_ADD(HttpPostService::addDate),
-        ADD_ORDER(HttpPostService::addOrder);
+        ADD_ORDER(HttpPostService::addOrder),
+        LOGOUT(HttpPostService::logout);
 
-        private final Function<JsonObject, String> resultFunc;
+        private final Function<HttpServletRequest, String> requestHandler;
 
-        UrlPathPost(Function<JsonObject, String> resultFunc) {
-            this.resultFunc = resultFunc;
+        UrlPathPost(Function<HttpServletRequest, String> requestHandler) {
+            this.requestHandler = requestHandler;
         }
 
-        String getAnswer(JsonObject reqObj) {
-            return resultFunc.apply(reqObj);
+        String getAnswer(HttpServletRequest request) {
+            return requestHandler.apply(request);
         }
     }
 
@@ -69,14 +61,33 @@ public class DataAPIServlet extends HttpServlet {
                 .replace("/", "")
                 .replace("-", "_")
                 .toUpperCase();
+
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
+        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Origin", "http://localhost:8081");
+        try {
+            UrlPathPost urlPathPost = UrlPathPost.valueOf(servletPath);
 
-        UrlPathPost urlPathPost = UrlPathPost.valueOf(servletPath);
-        JsonObject reqJsonObject = UtilFactory.convertHttpRequestToJsonObject(request);
-        response.getWriter().write(urlPathPost.getAnswer(
-                reqJsonObject
-        ));
+            response.getWriter().write(urlPathPost.getAnswer(request));
+        } catch (LogInFailedException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Log in failed");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+            response.sendError(404, jsonError.toString());
+        } catch (DateNotFoundException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Date not found");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+            response.sendError(404, jsonError.toString());
+        }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -86,13 +97,36 @@ public class DataAPIServlet extends HttpServlet {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
         response.setHeader("Access-Control-Allow-Origin", "*");
-        if (urlParts.length < 3) {
+        try {
             UrlPathGet urlPath = UrlPathGet.valueOf(servletPath.toUpperCase());
-            response.getWriter().write(urlPath.getAnswer());
-        } else {
-            UrlPathGetToArg urlPath = UrlPathGetToArg.valueOf(servletPath.toUpperCase());
-            response.getWriter().write(urlPath.getAnswer(Integer.parseInt(urlParts[2])));
+            response.getWriter().write(urlPath.getAnswer(request));
+        } catch (AccountAccessException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Log in or registration failed");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+
+            response.sendError(404, jsonError.toString());
+        } catch (PlayExistException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Date exist in database");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+            response.sendError(404, jsonError.toString());
+        } catch (PlayNotFoundException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Date not found in database");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+            response.sendError(404, jsonError.toString());
         }
+
 
     }
 }

@@ -16,6 +16,13 @@ public class UserTest {
     @Test
     public void incorrectPhoneNumberAccountTest() {
         assertThrows(PatternException.class, () -> new Admin(1, "I.V. Ivanov",
-                "fdsf2144xsc", "email", "817-47-53"));
+                "fdsf2144xsc", "nick@gmail.com", "817-47-53"));
+    }
+
+    @Test
+    public void createCorrectUser() {
+        var admin = new Admin(1, "I.V. Ivanov",
+                "fdsf2144xsc", "nick@gmail.com", "+375(29)817-47-53");
+        assertTrue(true);
     }
 }

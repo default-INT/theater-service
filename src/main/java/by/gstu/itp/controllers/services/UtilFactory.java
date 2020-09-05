@@ -1,17 +1,12 @@
 package by.gstu.itp.controllers.services;
 
 import by.gstu.itp.models.beans.Author;
+import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.beans.Genre;
 import by.gstu.itp.models.beans.Play;
 import by.gstu.itp.models.beans.accounts.User;
-import by.gstu.itp.models.data.converters.AuthorJsonConverter;
-import by.gstu.itp.models.data.converters.GenreJsonConverter;
-import by.gstu.itp.models.data.converters.PlayJsonConverter;
-import by.gstu.itp.models.data.converters.UserJsonConverter;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonSyntaxException;
+import by.gstu.itp.models.data.converters.*;
+import com.google.gson.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
@@ -23,6 +18,7 @@ public final class UtilFactory {
             .registerTypeAdapter(Author.class, new AuthorJsonConverter())
             .registerTypeAdapter(Genre.class, new GenreJsonConverter())
             .registerTypeAdapter(Play.class, new PlayJsonConverter())
+            .registerTypeAdapter(Date.class, new DateJsonConverter())
             .create();
 
     private UtilFactory() {}
@@ -42,6 +38,10 @@ public final class UtilFactory {
         } catch (IOException e) {
             throw new JsonSyntaxException(request.toString());
         }
+    }
+
+    public static JsonArray convertHttpRequestToJsonArray(HttpServletRequest request) {
+        return GSON.fromJson(convertHttpRequestToString(request), JsonArray.class);
     }
 
     public static JsonObject convertHttpRequestToJsonObject(HttpServletRequest request) {

@@ -16,7 +16,7 @@
         <property name="current_session_context_class">thread</property>
 
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <property name="hibernate.connection.pool_size">50</property>
+        <property name="hibernate.connection.pool_size">100</property>
 
         <mapping class="by.gstu.itp.models.beans.Play" />
         <mapping class="by.gstu.itp.models.beans.Author" />
