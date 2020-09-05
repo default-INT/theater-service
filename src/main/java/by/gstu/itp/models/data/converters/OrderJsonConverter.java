@@ -11,7 +11,7 @@ public class OrderJsonConverter implements JsonDeserializer<Order> {
     @Override
     public Order deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext)
             throws JsonParseException {
-        JsonObject jsonOrder = new JsonObject();
+        JsonObject jsonOrder = jsonElement.getAsJsonObject();
 
         if (jsonOrder.get("id") == null) {
             jsonOrder.addProperty("id", 0);

@@ -1,10 +1,12 @@
 package by.gstu.itp.controllers.services;
 
 import by.gstu.itp.models.beans.Date;
+import by.gstu.itp.models.beans.Hall;
 import by.gstu.itp.models.beans.accounts.User;
 import by.gstu.itp.models.data.dao.DAOFactory;
 import by.gstu.itp.models.exceptions.DateNotFoundException;
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 import javax.servlet.http.HttpServletRequest;
@@ -46,8 +48,16 @@ public final class HttpGetService {
     }
 
     public static String getHallSchema(HttpServletRequest request) {
+        return Hall.getHallSchema().toString();
+    }
 
-        return null;
+    public static String getHallInfo(HttpServletRequest request) {
+        JsonObject jsonObject = new JsonObject();
+
+        jsonObject.add("hallSchema", GSON.fromJson(getHallSchema(request), JsonArray.class));
+        jsonObject.add("allTickets", GSON.fromJson(getAllTickets(request), JsonArray.class));
+
+        return jsonObject.toString();
     }
 
     public static String getAllTickets(HttpServletRequest request) {

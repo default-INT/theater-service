@@ -66,7 +66,7 @@ public class Order extends EntityBean {
         this.seat = seat;
         this.user = Objects.requireNonNull(user);
         this.date = Objects.requireNonNull(date);
-        this.ticketCategory = TicketCategory.DEFAULT_TICKET;
+        this.ticketCategory = TicketCategory.valueOf(Hall.getInstance().getTicketType(row));
         this.price = DEFAULT_PRICE.multiply(BigDecimal.valueOf(ticketCategory.getDiscount()));
     }
 

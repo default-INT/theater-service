@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <hall>
+    <defaultPrice>6</defaultPrice>
     <rows>
         <row seats="8" />
         <row seats="8" />
-        <row seats="10" />
-        <row seats="10" />
-        <row seats="14" />
-        <row seats="14" />
+        <row seats="12" />
+        <row seats="12" />
+        <row seats="16" />
+        <row seats="16" />
     </rows>
     <ticketCategories>
         <category type="CheapTicket" rowStart="1" rowEnd="2"/>

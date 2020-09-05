@@ -89,7 +89,7 @@ public class User extends EntityBean {
         this(
                 jsonObject.get("id").getAsInt(),
                 jsonObject.get("name").getAsString(),
-                jsonObject.get("password").getAsString(),
+                "undefined",
                 jsonObject.get("email").getAsString(),
                 jsonObject.get("phone").getAsString()
         );

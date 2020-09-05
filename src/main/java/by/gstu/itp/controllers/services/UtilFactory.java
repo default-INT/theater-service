@@ -1,9 +1,6 @@
 package by.gstu.itp.controllers.services;
 
-import by.gstu.itp.models.beans.Author;
-import by.gstu.itp.models.beans.Date;
-import by.gstu.itp.models.beans.Genre;
-import by.gstu.itp.models.beans.Play;
+import by.gstu.itp.models.beans.*;
 import by.gstu.itp.models.beans.accounts.User;
 import by.gstu.itp.models.data.converters.*;
 import com.google.gson.*;
@@ -19,6 +16,7 @@ public final class UtilFactory {
             .registerTypeAdapter(Genre.class, new GenreJsonConverter())
             .registerTypeAdapter(Play.class, new PlayJsonConverter())
             .registerTypeAdapter(Date.class, new DateJsonConverter())
+            .registerTypeAdapter(Order.class, new OrderJsonConverter())
             .create();
 
     private UtilFactory() {}

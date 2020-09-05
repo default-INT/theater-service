@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/", "",{"version":3,"sources":["header.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,WAAW;IACX,aAAa;IACb,8BAA8B;IAC9B,iBAAiB;IACjB,mBAAmB;IACnB,uCAAuC;IACvC,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,oCAAoC;IACpC,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,uCAAuC;AAC3C;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,oBAAoB;IACpB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,cAAc;IACd,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,YAAY;AAChB;;AAEA;;CAEC","file":"header.css","sourcesContent":["/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/", "",{"version":3,"sources":["header.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,WAAW;IACX,aAAa;IACb,8BAA8B;IAC9B,iBAAiB;IACjB,mBAAmB;IACnB,uCAAuC;IACvC,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,oCAAoC;IACpC,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,uCAAuC;IACvC,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,oBAAoB;IACpB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,cAAc;IACd,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,YAAY;AAChB;;AAEA;;CAEC","file":"header.css","sourcesContent":["/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -704,11 +704,16 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
 /* harmony import */ var _LoginMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoginMenu */ "./src/components/header/LoginMenu.js");
+/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
+
 
 
 var Title = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   children: 'Theater',
-  classList: ['title']
+  classList: ['title'],
+  onclick: function onclick(e) {
+    return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_2__["default"].roteNewUrl('/plays');
+  }
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   type: 'header',
@@ -832,9 +837,7 @@ var PlayListTitle = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     type: 'main',
     id: 'main-container',
-    onload: function onload() {
-      return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_2__["default"].roteNewUrl('/plays');
-    },
+    // onload: () => ContentManager.roteNewUrl('/plays'),
     children: Object(_PlayPage__WEBPACK_IMPORTED_MODULE_3__["default"])(date)
   })
 }));
@@ -924,6 +927,7 @@ var RowSeats = function RowSeats(rowId, numberSeat, orderedTicket) {
 
 /* harmony default export */ __webpack_exports__["default"] = (function (rowsSchema, orderedTicket) {
   return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    id: 'play-hall',
     classList: ['play-hall'],
     children: rowsSchema.map(function (row, i) {
       return RowSeats(i, row.seats, orderedTicket);
@@ -1062,6 +1066,8 @@ var Title = function Title(title) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
+/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
+
 
 /**
  *
@@ -1111,9 +1117,11 @@ var PlayDates = function PlayDates(dates) {
     children: dates.map(function (date) {
       return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
         type: 'a',
-        href: '/date/' + date.id,
         classList: ['date-link'],
-        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date))
+        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date)),
+        onclick: function onclick(e) {
+          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__["default"].roteNewUrl('/date/' + date.id);
+        }
       });
     })
   });
@@ -1179,6 +1187,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
 /* harmony import */ var _Hall__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hall */ "./src/components/main-content/Hall.js");
 /* harmony import */ var _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../managers/OrderManager */ "./src/managers/OrderManager.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
+/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
+
+
 
 
 
@@ -1211,6 +1223,9 @@ var OtherDates = function OtherDates(dates, selectedDate) {
       return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
         type: 'a',
         classList: ['date-link', date.id === selectedDate.id ? 'selected-date' : null],
+        onclick: function onclick(e) {
+          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].roteNewUrl('/date/' + date.id);
+        },
         children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date))
       });
     })
@@ -1276,67 +1291,21 @@ var rowSchema = [{
 }, {
   seats: 14
 }];
-var orderedTickets = [{
-  seat: 8,
-  row: 1
-}, {
-  seat: 3,
-  row: 2
-}, {
-  seat: 10,
-  row: 4
-}, {
-  seat: 8,
-  row: 2
-}, {
-  seat: 1,
-  row: 5
-}, {
-  seat: 1,
-  tow: 6
-}];
-/**
-const MessageWindowModal = (message, func) => node({
-    id: 'message-window',
-    classList: ['message-window'],
-    children: [
-        node({
-            classList: ['message'],
-            children: message
-        }),
-        node({
-            classList: ['window-footer'],
-            children: [
-                node({
-                    type: 'a',
-                    children: 'Yes',
-                    onclick: function (e) {
-                        func();
-                        document.getElementById('message-window').remove();
-                    }
-                }),
-                node({
-                    type: 'a',
-                    children: 'No',
-                    onclick: function (e) {
-                        document.getElementById('message-window').remove();
-                    }
-                })
-            ]
-        })
-    ]
-});
- */
-
-var tickets = [{
-  type: "CHEAP",
-  row: 1,
-  seat: 2
-}];
+var orderedTickets = [];
 /* harmony default export */ __webpack_exports__["default"] = (function (date) {
   return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     id: 'date-' + date.id,
     classList: ['play-page'],
+    onload: function onload() {
+      _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__["default"].newInstance();
+      fetch(_constants__WEBPACK_IMPORTED_MODULE_3__["SERVER_URL"] + '/ordered-tickets/' + date.id).then(function (response) {
+        return response.json();
+      }).then(function (orderedTickets) {
+        var playHall = document.getElementById('play-hall');
+        playHall.innerHTML = '';
+        playHall.appendChild(Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(rowSchema, orderedTickets));
+      });
+    },
     children: [PlayTitle(date.play.name), PlayInfo(date.play.genre, date.play.author), OtherDates(date.play.dates, date), Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(rowSchema, orderedTickets), TicketInfo(), TotalCost(), CompleteOrderSection(date)]
   });
 });
@@ -1552,6 +1521,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+window.onpopstate = function () {
+  _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].roteNewUrl(Object(_managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["getUrlPath"])(document.URL));
+};
+
 var root = document.getElementById('root');
 _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].documentStartRender(root, [_components_header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], _components_main_content_LoginWindow__WEBPACK_IMPORTED_MODULE_5__["default"], _components_main_content_RegistrationWindow__WEBPACK_IMPORTED_MODULE_6__["default"], _components_main_content_Content__WEBPACK_IMPORTED_MODULE_2__["default"], _components_footer_Footer__WEBPACK_IMPORTED_MODULE_3__["default"]]);
 
@@ -1561,34 +1535,40 @@ _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].documentStartRe
 /*!****************************************!*\
   !*** ./src/managers/ContentManager.js ***!
   \****************************************/
-/*! exports provided: default */
+/*! exports provided: getUrlPath, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUrlPath", function() { return getUrlPath; });
 /* harmony import */ var _components_main_content_PlayList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-content/PlayList */ "./src/components/main-content/PlayList.js");
 /* harmony import */ var _UserManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserManager */ "./src/managers/UserManager.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
+/* harmony import */ var _components_main_content_PlayPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/main-content/PlayPage */ "./src/components/main-content/PlayPage.js");
 
 
-var serverUrl = 'http://localhost:8080/data-api';
+
+ //const serverUrl = 'http://localhost:8080/data-api';
+
 var toUrls = {
   PLAYS: function PLAYS() {
-    fetch(serverUrl + '/plays').then(function (response) {
+    fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/plays').then(function (response) {
       return response.json();
     }).then(function (plays) {
       // history.pushState(null, null,"/plays")
       ContentManager.changeContent(Object(_components_main_content_PlayList__WEBPACK_IMPORTED_MODULE_0__["default"])(plays), '#main-container');
     });
   },
-  DATE: function DATE(date) {
-    fetch(serverUrl + '/date/' + date.id).then();
+  DATE: function DATE(path) {
+    var dateId = parseInt(path);
+    fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/date/' + dateId).then(function (response) {
+      return response.json();
+    }).then(function (date) {
+      // history.pushState(null, null,"/date/" + date.id);
+      ContentManager.changeContent(Object(_components_main_content_PlayPage__WEBPACK_IMPORTED_MODULE_3__["default"])(date), '#main-container');
+    });
   }
 };
-
-var getUrlPath = function getUrlPath(fullUrl) {
-  return new URL(fullUrl).pathname;
-};
-
 var ContentManager = {
   changeContent: function changeContent(newNode, queryRootNode) {
     var rootNode = document.querySelector(queryRootNode);
@@ -1596,7 +1576,8 @@ var ContentManager = {
     rootNode.append(newNode);
   },
   roteNewUrl: function roteNewUrl(url) {
-    toUrls[url.replace('/', '').toUpperCase()]();
+    var urlPaths = url.split('/');
+    toUrls[urlPaths[1].toUpperCase()](urlPaths[2]);
   },
   documentStartRender: function documentStartRender(rootElement, children) {
     rootElement.innerHTML = "";
@@ -1604,10 +1585,15 @@ var ContentManager = {
       return rootElement.appendChild(child);
     });
     _UserManager__WEBPACK_IMPORTED_MODULE_1__["default"].getInstance().getAuthUser();
-    this.roteNewUrl(getUrlPath(document.URL));
+    var url = getUrlPath(document.URL);
+    if (url === '/') url = '/plays';
+    this.roteNewUrl(url);
     this._rootNode = rootElement;
     this._childrenElements = children;
   }
+};
+var getUrlPath = function getUrlPath(fullUrl) {
+  return new URL(fullUrl).pathname;
 };
 /* harmony default export */ __webpack_exports__["default"] = (ContentManager);
 
@@ -1625,13 +1611,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return OrderManager; });
 /* harmony import */ var _UserManager__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./UserManager */ "./src/managers/UserManager.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
+/* harmony import */ var _ContentManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ContentManager */ "./src/managers/ContentManager.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 
 
 
@@ -1649,6 +1635,12 @@ var OrderManager = /*#__PURE__*/function () {
         OrderManager._instance = new OrderManager();
       }
 
+      return OrderManager._instance;
+    }
+  }, {
+    key: "newInstance",
+    value: function newInstance() {
+      OrderManager._instance = new OrderManager();
       return OrderManager._instance;
     }
   }]);
@@ -1721,8 +1713,6 @@ var OrderManager = /*#__PURE__*/function () {
   }, {
     key: "sendOrder",
     value: function sendOrder(date) {
-      var _headers;
-
       var user = _UserManager__WEBPACK_IMPORTED_MODULE_0__["default"].getInstance().getUser();
 
       if (!date) {
@@ -1731,6 +1721,11 @@ var OrderManager = /*#__PURE__*/function () {
       }
 
       if (!user) {
+        console.error("User is undefined");
+        return;
+      }
+
+      if (user.name.toUpperCase() === 'USER') {
         console.error("User is undefined");
         return;
       }
@@ -1745,19 +1740,22 @@ var OrderManager = /*#__PURE__*/function () {
           row: ticket.row,
           seat: ticket.seat,
           user: user,
-          date: date
+          dateId: date.id
         };
       });
 
-      fetch(_constants__WEBPACK_IMPORTED_MODULE_1__["SERVER_URL"] + '/order', {
+      fetch(_constants__WEBPACK_IMPORTED_MODULE_1__["SERVER_URL"] + '/add-order', {
         method: 'POST',
-        headers: (_headers = {}, _defineProperty(_headers, _constants__WEBPACK_IMPORTED_MODULE_1__["HEADERS"].CONTENT_TYPE, _constants__WEBPACK_IMPORTED_MODULE_1__["CONTENT_TYPE_JSON"]), _defineProperty(_headers, _constants__WEBPACK_IMPORTED_MODULE_1__["HEADERS"].ACCESS_CONTROL, _constants__WEBPACK_IMPORTED_MODULE_1__["ACCESS_CONTROL_ALLOW_HEADER"]), _headers)
+        body: JSON.stringify(orders)
       }).then(function (response) {
         return response.json();
       }).then(function (answer) {
         if (answer.status === _constants__WEBPACK_IMPORTED_MODULE_1__["ANSWER_STATUS"].COMPLETED) {
+          _ContentManager__WEBPACK_IMPORTED_MODULE_2__["default"].roteNewUrl('/date/' + date.id);
           console.log("completed");
         }
+      })["catch"](function (reject) {
+        alert("Order not take... Something went wrong.");
       });
     }
   }, {

@@ -6,10 +6,7 @@ import by.gstu.itp.models.beans.Play;
 import by.gstu.itp.models.beans.accounts.User;
 import by.gstu.itp.models.data.dao.DAOFactory;
 import by.gstu.itp.models.data.dao.UserDAO;
-import by.gstu.itp.models.exceptions.LogInFailedException;
-import by.gstu.itp.models.exceptions.PlayExistException;
-import by.gstu.itp.models.exceptions.PlayNotFoundException;
-import by.gstu.itp.models.exceptions.RegistrationFailedException;
+import by.gstu.itp.models.exceptions.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -85,7 +82,21 @@ public final class HttpPostService {
 
         JsonArray ordersJson = UtilFactory.convertHttpRequestToJsonArray(request);
         List<Order> orders = new ArrayList<>();
-        ordersJson.forEach(order -> orders.add(GSON.fromJson(order, Order.class)));
+        ordersJson.forEach(order -> {
+            JsonObject jsonObject = order.getAsJsonObject();
+
+            int row = jsonObject.get("row").getAsInt();
+            int seat = jsonObject.get("seat").getAsInt();
+            User user = (User) request.getSession().getAttribute("authUser");
+            int dateId = jsonObject.get("dateId").getAsInt();
+            Date orderDate = DAOFactory.getDAOFactory().getDateDAO()
+                    .readAll()
+                    .filter(date -> date.getId() == dateId)
+                    .findFirst()
+                    .orElseThrow(DateNotFoundException::new);
+
+            orders.add(new Order(row, seat, user, orderDate));
+        });
 
         DAOFactory.getDAOFactory().getOrderDAO()
                 .addAll(orders);

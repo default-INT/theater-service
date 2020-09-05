@@ -25,7 +25,9 @@ public class DataAPIServlet extends HttpServlet {
         AUTHORS(HttpGetService::getAllAuthors),
         ORDERED_TICKETS(HttpGetService::getAllTickets),
         AUTH(HttpGetService::getAuthUser),
-        DATE(HttpGetService::getDate);
+        DATE(HttpGetService::getDate),
+        HALL_INFO(HttpGetService::getHallInfo),
+        HALL_SCHEMA(HttpGetService::getHallSchema);
 
         private final Function<HttpServletRequest, String> requestHandler;
 
@@ -86,6 +88,14 @@ public class DataAPIServlet extends HttpServlet {
 
             logger.info(e);
             response.sendError(404, jsonError.toString());
+        } catch (PatternException e) {
+            JsonObject jsonError = new JsonObject();
+
+            jsonError.addProperty("error", "Incorrect data input");
+            jsonError.addProperty("detail", e.getMessage());
+
+            logger.info(e);
+            response.sendError(406, jsonError.toString());
         }
 
     }
