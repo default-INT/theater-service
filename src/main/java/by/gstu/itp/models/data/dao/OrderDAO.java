@@ -7,6 +7,8 @@ import java.util.stream.Stream;
 
 public interface OrderDAO {
     Stream<Order> readAll();
+    Order read(int orderId);
+    void completeOrder(int orderId);
     void add(Order order);
     void addAll(Collection<Order> order);
     void remove(Order order);

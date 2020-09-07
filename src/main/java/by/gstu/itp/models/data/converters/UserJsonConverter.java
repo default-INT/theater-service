@@ -7,9 +7,7 @@ import by.gstu.itp.models.beans.accounts.User;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;
-import java.util.Optional;
 import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class UserJsonConverter implements JsonSerializer<User>, JsonDeserializer<User> {
     private enum UserConverter {

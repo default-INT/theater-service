@@ -42,6 +42,7 @@ create table orders (
     user_id int not null,
     date_id int not null ,
     ticket_category varchar(60) not null ,
+    completed boolean not null ,
     price decimal not null ,
     foreign key (user_id) references logins (id),
     foreign key (date_id) references dates (id)
@@ -87,7 +88,7 @@ insert into dates (play_id, date) VALUES (2, '2020-02-20');
 insert into dates (play_id, date) VALUES (2, '2020-02-17');
 insert into dates (play_id, date) VALUES (2, '2020-02-24');
 
-insert into orders (row_id, seat, user_id, date_id, ticket_category, price)
-VALUES (1, 1, 1, 1, 'CHEAP_TICKET', 6);
-insert into orders (row_id, seat, user_id, date_id, ticket_category, price)
-VALUES (3, 10, 1, 1, 'EXPENSIVE_TICKET', 6);
+insert into orders (row_id, seat, user_id, date_id, ticket_category, completed, price)
+VALUES (1, 1, 1, 1, 'CHEAP_TICKET',false,  6);
+insert into orders (row_id, seat, user_id, date_id, ticket_category, completed, price)
+VALUES (3, 10, 1, 1, 'EXPENSIVE_TICKET', false, 6);

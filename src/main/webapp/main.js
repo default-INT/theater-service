@@ -123,7 +123,29 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/", "",{"version":3,"sources":["header.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,WAAW;IACX,aAAa;IACb,8BAA8B;IAC9B,iBAAiB;IACjB,mBAAmB;IACnB,uCAAuC;IACvC,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,oCAAoC;IACpC,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,uCAAuC;IACvC,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,oBAAoB;IACpB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,cAAc;IACd,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,YAAY;AAChB;;AAEA;;CAEC","file":"header.css","sourcesContent":["/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\n/*\n    Header end\n*/"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\nheader .role-menu-link {\n    background: #ff0000;\n    color: white;\n    padding: 1vmin;\n}\n\nheader .role-menu-link:hover {\n    background: white;\n    color: #ff0000;\n}\n\n/*\n    Header end\n*/", "",{"version":3,"sources":["header.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,WAAW;IACX,aAAa;IACb,8BAA8B;IAC9B,iBAAiB;IACjB,mBAAmB;IACnB,uCAAuC;IACvC,gBAAgB;AACpB;;AAEA;IACI,gBAAgB;IAChB,mBAAmB;IACnB,oCAAoC;IACpC,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,uCAAuC;IACvC,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,iBAAiB;IACjB,WAAW;;AAEf;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,oBAAoB;IACpB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,8BAA8B;AAClC;;AAEA;IACI,cAAc;IACd,WAAW;AACf;;AAEA;IACI,gBAAgB;IAChB,YAAY;AAChB;;AAEA;IACI,mBAAmB;IACnB,YAAY;IACZ,cAAc;AAClB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;;CAEC","file":"header.css","sourcesContent":["/*\n    Header start\n*/\n\nheader {\n    width: 100%;\n    display: flex;\n    justify-content: space-between;\n    background: white;\n    align-items: center;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    overflow: hidden;\n}\n\nheader .title {\n    font-size: 3vmax;\n    margin-left: 10vmin;\n    padding: 1vmin 1.5vmin 1vmin 1.5vmin;\n    display: flex;\n    align-items: center;\n    color: white;\n    background: #f00;\n    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nheader .title:hover {\n    background: white;\n    color: #f00;\n\n}\n\nheader #login-menu {\n    display: flex;\n}\n\nheader #login-menu div {\n    padding-right: 1vmin;\n    display: flex;\n    align-items: center;\n}\n\nheader #login-menu #util-btn {\n    border-left: red 0.5vmin solid;\n}\n\nheader #login-menu #util-btn a {\n    padding: 2vmin;\n    color: #f00;\n}\n\nheader #login-menu #util-btn a:hover {\n    background: #f00;\n    color: white;\n}\n\nheader .role-menu-link {\n    background: #ff0000;\n    color: white;\n    padding: 1vmin;\n}\n\nheader .role-menu-link:hover {\n    background: white;\n    color: #ff0000;\n}\n\n/*\n    Header end\n*/"]}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/loader.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/loader.css ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".lds-dual-ring {\r\n    display: flex;\r\n    width: 100%;\r\n    height: 100%;\r\n    padding-top: 3.5vh;\r\n    justify-content: center;\r\n}\r\n.lds-dual-ring:after {\r\n    content: \" \";\r\n    display: block;\r\n    width: 6vmax;\r\n    height: 6vmax;\r\n    margin: 1.5vmax;\r\n    border-radius: 50%;\r\n    border: 6px solid #ff0000;\r\n    border-color: #ff0000 transparent #ff0000 transparent;\r\n    animation: lds-dual-ring 1.2s linear infinite;\r\n}\r\n\r\n@keyframes lds-dual-ring {\r\n    0% {\r\n        transform: rotate(0deg);\r\n    }\r\n    100% {\r\n        transform: rotate(360deg);\r\n    }\r\n}", "",{"version":3,"sources":["loader.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,WAAW;IACX,YAAY;IACZ,kBAAkB;IAClB,uBAAuB;AAC3B;AACA;IACI,YAAY;IACZ,cAAc;IACd,YAAY;IACZ,aAAa;IACb,eAAe;IACf,kBAAkB;IAClB,yBAAyB;IACzB,qDAAqD;IACrD,6CAA6C;AACjD;;AAEA;IACI;QACI,uBAAuB;IAC3B;IACA;QACI,yBAAyB;IAC7B;AACJ","file":"loader.css","sourcesContent":[".lds-dual-ring {\r\n    display: flex;\r\n    width: 100%;\r\n    height: 100%;\r\n    padding-top: 3.5vh;\r\n    justify-content: center;\r\n}\r\n.lds-dual-ring:after {\r\n    content: \" \";\r\n    display: block;\r\n    width: 6vmax;\r\n    height: 6vmax;\r\n    margin: 1.5vmax;\r\n    border-radius: 50%;\r\n    border: 6px solid #ff0000;\r\n    border-color: #ff0000 transparent #ff0000 transparent;\r\n    animation: lds-dual-ring 1.2s linear infinite;\r\n}\r\n\r\n@keyframes lds-dual-ring {\r\n    0% {\r\n        transform: rotate(0deg);\r\n    }\r\n    100% {\r\n        transform: rotate(360deg);\r\n    }\r\n}"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -145,7 +167,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "/*\n    start main-content\n*/\n\n#content main {\n    background: white;\n    margin: 3vh auto 3vh;\n    height: auto;\n    width: 50vw;\n    min-width: 400px;\n    min-height: 400px;\n    border-radius: 1vmin;\n}\n\n#content main .title {\n    width: 100%;\n    text-align: center;\n    font-size: 3vmax;\n    padding: 1vmin 0 2vmin;\n    border-bottom: 3px solid #f4f4f4;\n}\n\n#content main .plays .play {\n    padding: 1vmax;\n    border-bottom: 2px solid #f4f4f4;\n}\n\n\n#content main .plays .play .play-title {\n    display: inline-block;\n    width: auto;\n    background: #ff0000;\n    color: white;\n    font-weight: bold;\n    padding: 1vmin;\n}\n\n#content main .plays .play .play-info {\n    display: flex;\n    padding-top: 1.5vmin;\n    padding-bottom: 1.5vmin;\n}\n\n#content main .plays .play .play-info * {\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link {\n    color: #6f6f6f;\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link:hover {\n    color: #ff0000;\n}\n\n\n/*\n    end main-content\n*/", "",{"version":3,"sources":["main-content.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,iBAAiB;IACjB,oBAAoB;IACpB,YAAY;IACZ,WAAW;IACX,gBAAgB;IAChB,iBAAiB;IACjB,oBAAoB;AACxB;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,gBAAgB;IAChB,sBAAsB;IACtB,gCAAgC;AACpC;;AAEA;IACI,cAAc;IACd,gCAAgC;AACpC;;;AAGA;IACI,qBAAqB;IACrB,WAAW;IACX,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,oBAAoB;IACpB,uBAAuB;AAC3B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,cAAc;IACd,mBAAmB;AACvB;;AAEA;IACI,cAAc;AAClB;;;AAGA;;CAEC","file":"main-content.css","sourcesContent":["/*\n    start main-content\n*/\n\n#content main {\n    background: white;\n    margin: 3vh auto 3vh;\n    height: auto;\n    width: 50vw;\n    min-width: 400px;\n    min-height: 400px;\n    border-radius: 1vmin;\n}\n\n#content main .title {\n    width: 100%;\n    text-align: center;\n    font-size: 3vmax;\n    padding: 1vmin 0 2vmin;\n    border-bottom: 3px solid #f4f4f4;\n}\n\n#content main .plays .play {\n    padding: 1vmax;\n    border-bottom: 2px solid #f4f4f4;\n}\n\n\n#content main .plays .play .play-title {\n    display: inline-block;\n    width: auto;\n    background: #ff0000;\n    color: white;\n    font-weight: bold;\n    padding: 1vmin;\n}\n\n#content main .plays .play .play-info {\n    display: flex;\n    padding-top: 1.5vmin;\n    padding-bottom: 1.5vmin;\n}\n\n#content main .plays .play .play-info * {\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link {\n    color: #6f6f6f;\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link:hover {\n    color: #ff0000;\n}\n\n\n/*\n    end main-content\n*/"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, "/*\n    start main-content\n*/\n\n#content main {\n    background: white;\n    margin: 3vh auto 3vh;\n    height: auto;\n    width: 50vw;\n    min-width: 20em;\n    min-height: 200px;\n    border-radius: 1vmin;\n}\n\n#content main .title {\n    width: 100%;\n    text-align: center;\n    font-size: 3vmax;\n    padding: 1vmin 0 2vmin;\n    border-bottom: 3px solid #f4f4f4;\n}\n\n#content main .plays .play {\n    padding: 1vmax;\n    border-bottom: 2px solid #f4f4f4;\n}\n\n\n#content main .plays .play .play-title {\n    display: inline-block;\n    width: auto;\n    background: #ff0000;\n    color: white;\n    font-weight: bold;\n    padding: 1vmin;\n}\n\n#content main .plays .play .play-info {\n    display: flex;\n    padding-top: 1.5vmin;\n    padding-bottom: 1.5vmin;\n}\n\n#content main .plays .play .play-info * {\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link {\n    color: #6f6f6f;\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link:hover {\n    color: #ff0000;\n}\n\n/*\n    end main-content\n*/", "",{"version":3,"sources":["main-content.css"],"names":[],"mappings":"AAAA;;CAEC;;AAED;IACI,iBAAiB;IACjB,oBAAoB;IACpB,YAAY;IACZ,WAAW;IACX,eAAe;IACf,iBAAiB;IACjB,oBAAoB;AACxB;;AAEA;IACI,WAAW;IACX,kBAAkB;IAClB,gBAAgB;IAChB,sBAAsB;IACtB,gCAAgC;AACpC;;AAEA;IACI,cAAc;IACd,gCAAgC;AACpC;;;AAGA;IACI,qBAAqB;IACrB,WAAW;IACX,mBAAmB;IACnB,YAAY;IACZ,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,oBAAoB;IACpB,uBAAuB;AAC3B;;AAEA;IACI,mBAAmB;AACvB;;AAEA;IACI,cAAc;IACd,mBAAmB;AACvB;;AAEA;IACI,cAAc;AAClB;;AAEA;;CAEC","file":"main-content.css","sourcesContent":["/*\n    start main-content\n*/\n\n#content main {\n    background: white;\n    margin: 3vh auto 3vh;\n    height: auto;\n    width: 50vw;\n    min-width: 20em;\n    min-height: 200px;\n    border-radius: 1vmin;\n}\n\n#content main .title {\n    width: 100%;\n    text-align: center;\n    font-size: 3vmax;\n    padding: 1vmin 0 2vmin;\n    border-bottom: 3px solid #f4f4f4;\n}\n\n#content main .plays .play {\n    padding: 1vmax;\n    border-bottom: 2px solid #f4f4f4;\n}\n\n\n#content main .plays .play .play-title {\n    display: inline-block;\n    width: auto;\n    background: #ff0000;\n    color: white;\n    font-weight: bold;\n    padding: 1vmin;\n}\n\n#content main .plays .play .play-info {\n    display: flex;\n    padding-top: 1.5vmin;\n    padding-bottom: 1.5vmin;\n}\n\n#content main .plays .play .play-info * {\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link {\n    color: #6f6f6f;\n    padding-left: 1vmin;\n}\n\n#content main .plays .play a.date-link:hover {\n    color: #ff0000;\n}\n\n/*\n    end main-content\n*/"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -185,7 +207,7 @@ ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_main_content_css_
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_play_page_css__WEBPACK_IMPORTED_MODULE_4__["default"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_5___default()(_fonts_GTWalsheimPro_otf__WEBPACK_IMPORTED_MODULE_6__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n    font-family: \"GTWalsheimPro\";\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n    font-style: normal;\n    font-weight: normal;\n}\n\nhtml, body {\n    height: 100%;\n    margin: 0;\n    background: #f4f4f4;\n}\n\n::-moz-focus-outer, ::-moz-focus-inner {\n    border: 0;\n    padding: 0;\n}\n\n*{\n    padding: 0;\n    margin: 0;\n    font-family: 'GTWalsheimPro', serif;\n    font-size: 2vmax;\n}\n\na {\n    text-decoration: none;\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\n#root {\n    display: grid;\n    height: 100%;\n    grid-template-rows: 8vh 1fr 10vh;\n}", "",{"version":3,"sources":["main.css"],"names":[],"mappings":"AAKA;IACI,4BAA4B;IAC5B,+DAAyD;IACzD,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,YAAY;IACZ,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,SAAS;IACT,UAAU;AACd;;AAEA;IACI,UAAU;IACV,SAAS;IACT,mCAAmC;IACnC,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,gCAAgC;AACpC","file":"main.css","sourcesContent":["@import \"header.css\";\n@import \"footer.css\";\n@import \"main-content.css\";\n@import \"play-page.css\";\n\n@font-face {\n    font-family: \"GTWalsheimPro\";\n    src: url('../fonts/GTWalsheimPro.otf') format(\"truetype\");\n    font-style: normal;\n    font-weight: normal;\n}\n\nhtml, body {\n    height: 100%;\n    margin: 0;\n    background: #f4f4f4;\n}\n\n::-moz-focus-outer, ::-moz-focus-inner {\n    border: 0;\n    padding: 0;\n}\n\n*{\n    padding: 0;\n    margin: 0;\n    font-family: 'GTWalsheimPro', serif;\n    font-size: 2vmax;\n}\n\na {\n    text-decoration: none;\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\n#root {\n    display: grid;\n    height: 100%;\n    grid-template-rows: 8vh 1fr 10vh;\n}"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, "@font-face {\n    font-family: \"GTWalsheimPro\";\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n    font-style: normal;\n    font-weight: normal;\n}\n\nhtml, body {\n    height: 100%;\n    margin: 0;\n    background: #f4f4f4;\n}\n\n::-moz-focus-outer, ::-moz-focus-inner {\n    border: 0;\n    padding: 0;\n}\n\n*{\n    padding: 0;\n    margin: 0;\n    font-family: 'GTWalsheimPro', serif;\n    font-size: 2vmax;\n}\n\na {\n    text-decoration: none;\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nselect, option {\n    cursor: pointer;\n}\n\n#root {\n    display: grid;\n    height: 100%;\n    grid-template-rows: 8vh 1fr 10vh;\n}\n\n\ninput, select, textarea {\n    font-size: 24pt;\n    border-width: 0;\n    background: #e6e6e6;\n    outline: none;\n    transition: .4s ease;\n}\n\ninput, select, input[type = 'password'] {\n    margin-top: 2vmin;\n    height: 3vmax;\n    padding-left: 1vmin;\n}\n\ninput[type = \"submit\"], select{\n    cursor: pointer;\n}\n\ninput[type = \"submit\"]:hover, select:hover{\n    box-shadow: inset 0 0 30px 50px rgba(0,0,0,.2);\n}\n\ninput[type = \"text\"]:focus, input[type = \"password\"]:focus, select:hover, textarea:focus {\n    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);\n    border: none;\n}", "",{"version":3,"sources":["main.css"],"names":[],"mappings":"AAKA;IACI,4BAA4B;IAC5B,+DAAyD;IACzD,kBAAkB;IAClB,mBAAmB;AACvB;;AAEA;IACI,YAAY;IACZ,SAAS;IACT,mBAAmB;AACvB;;AAEA;IACI,SAAS;IACT,UAAU;AACd;;AAEA;IACI,UAAU;IACV,SAAS;IACT,mCAAmC;IACnC,gBAAgB;AACpB;;AAEA;IACI,qBAAqB;IACrB,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,aAAa;IACb,YAAY;IACZ,gCAAgC;AACpC;;;AAGA;IACI,eAAe;IACf,eAAe;IACf,mBAAmB;IACnB,aAAa;IACb,oBAAoB;AACxB;;AAEA;IACI,iBAAiB;IACjB,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,8CAA8C;AAClD;;AAEA;IACI,0CAA0C;IAC1C,YAAY;AAChB","file":"main.css","sourcesContent":["@import \"header.css\";\n@import \"footer.css\";\n@import \"main-content.css\";\n@import \"play-page.css\";\n\n@font-face {\n    font-family: \"GTWalsheimPro\";\n    src: url('../fonts/GTWalsheimPro.otf') format(\"truetype\");\n    font-style: normal;\n    font-weight: normal;\n}\n\nhtml, body {\n    height: 100%;\n    margin: 0;\n    background: #f4f4f4;\n}\n\n::-moz-focus-outer, ::-moz-focus-inner {\n    border: 0;\n    padding: 0;\n}\n\n*{\n    padding: 0;\n    margin: 0;\n    font-family: 'GTWalsheimPro', serif;\n    font-size: 2vmax;\n}\n\na {\n    text-decoration: none;\n    cursor: pointer;\n    transition: .5s ease-in-out;\n}\n\nselect, option {\n    cursor: pointer;\n}\n\n#root {\n    display: grid;\n    height: 100%;\n    grid-template-rows: 8vh 1fr 10vh;\n}\n\n\ninput, select, textarea {\n    font-size: 24pt;\n    border-width: 0;\n    background: #e6e6e6;\n    outline: none;\n    transition: .4s ease;\n}\n\ninput, select, input[type = 'password'] {\n    margin-top: 2vmin;\n    height: 3vmax;\n    padding-left: 1vmin;\n}\n\ninput[type = \"submit\"], select{\n    cursor: pointer;\n}\n\ninput[type = \"submit\"]:hover, select:hover{\n    box-shadow: inset 0 0 30px 50px rgba(0,0,0,.2);\n}\n\ninput[type = \"text\"]:focus, input[type = \"password\"]:focus, select:hover, textarea:focus {\n    box-shadow: inset 0 0 0 2px rgba(0,0,0,.2);\n    border: none;\n}"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -229,7 +251,29 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "\r\n#content main .play-page .title {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .title .title-content {\r\n    background: #ff0000;\r\n    color: white;\r\n    font-size: inherit;\r\n    padding: 1.6vmin;\r\n}\r\n\r\n#content main .play-page .short-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .short-info div {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .other-dates a {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n#content main .play-page .other-dates a:hover {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .play-hall {\r\n    width: 80%;\r\n    justify-content: center;\r\n    margin: auto;\r\n    padding: 2vmax 0 2vmax 0;\r\n}\r\n\r\n#content main .play-page .play-hall .row {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .play-hall .seat {\r\n    width: auto;\r\n    margin-right: 0.25em;\r\n    margin-bottom: 0.25em;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox {\r\n    position: absolute;\r\n    z-index: -1;\r\n    opacity: 0;\r\n}\r\n#content main .play-page .play-hall .custom-checkbox+label {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    user-select: none;\r\n}\r\n\r\n\r\n#content main .play-page .play-hall .custom-checkbox+label::before {\r\n    content: '';\r\n    display: inline-block;\r\n    width: 1.2em;\r\n    height: 1.2em;\r\n    flex-shrink: 0;\r\n    flex-grow: 0;\r\n    border: 1px solid #adb5bd;\r\n    border-radius: 0.2em;\r\n    background-repeat: no-repeat;\r\n    background-position: center center;\r\n    background-size: 50% 50%;\r\n    cursor: pointer;\r\n    transition: .5s ease-in-out;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {\r\n    border-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):active+label::before {\r\n    background-color: #b3d7ff;\r\n    border-color: #b3d7ff;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:checked+label::before {\r\n    border-color: #0ec91e;\r\n    background-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:disabled+label::before {\r\n    background-color: #ff0000;\r\n    border-color: #ff0000;\r\n}\r\n\r\n#content main .play-page .select-tickets-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .order-total-cost  {\r\n    display: flex;\r\n    padding: 1vmax;\r\n}\r\n#content main .play-page .order-total-cost .total-cost-content {\r\n    display: flex;\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .order-total-cost .total-cost-content div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .complete-order-section {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1vmin 0 2vmin;\r\n    border-top: 3px solid #f4f4f4;;\r\n}\r\n\r\n#content main .play-page .complete-order-section a {\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n    margin: 0.5em;\r\n}\r\n\r\n#content main .play-page .complete-order-section a:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.message-window {\r\n    position: fixed;\r\n    left: 0;\r\n    right: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    background-color: rgb(0,0,0); /* Затемнение фона */\r\n    background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */\r\n    z-index: 1; /* Фон на нижнем слое */\r\n    overflow: auto; /* При необходимости, то появиться прокрутка */\r\n}\r\n", "",{"version":3,"sources":["play-page.css"],"names":[],"mappings":";AACA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,mBAAmB;IACnB,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;AACpB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,UAAU;IACV,uBAAuB;IACvB,YAAY;IACZ,wBAAwB;AAC5B;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,oBAAoB;IACpB,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,UAAU;AACd;AACA;IACI,oBAAoB;IACpB,mBAAmB;IACnB,iBAAiB;AACrB;;;AAGA;IACI,WAAW;IACX,qBAAqB;IACrB,YAAY;IACZ,aAAa;IACb,cAAc;IACd,YAAY;IACZ,yBAAyB;IACzB,oBAAoB;IACpB,4BAA4B;IAC5B,kCAAkC;IAClC,wBAAwB;IACxB,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,yBAAyB;IACzB,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;IACrB,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;IACzB,qBAAqB;AACzB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,cAAc;AAClB;AACA;IACI,aAAa;IACb,cAAc;IACd,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI,cAAc;IACd,mBAAmB;IACnB,YAAY;IACZ,aAAa;AACjB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,OAAO;IACP,QAAQ;IACR,WAAW;IACX,YAAY;;IAEZ,4BAA4B,EAAE,oBAAoB;IAClD,iCAAiC,EAAE,8BAA8B;IACjE,UAAU,EAAE,uBAAuB;IACnC,cAAc,EAAE,8CAA8C;AAClE","file":"play-page.css","sourcesContent":["\r\n#content main .play-page .title {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .title .title-content {\r\n    background: #ff0000;\r\n    color: white;\r\n    font-size: inherit;\r\n    padding: 1.6vmin;\r\n}\r\n\r\n#content main .play-page .short-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .short-info div {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .other-dates a {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n#content main .play-page .other-dates a:hover {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .play-hall {\r\n    width: 80%;\r\n    justify-content: center;\r\n    margin: auto;\r\n    padding: 2vmax 0 2vmax 0;\r\n}\r\n\r\n#content main .play-page .play-hall .row {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .play-hall .seat {\r\n    width: auto;\r\n    margin-right: 0.25em;\r\n    margin-bottom: 0.25em;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox {\r\n    position: absolute;\r\n    z-index: -1;\r\n    opacity: 0;\r\n}\r\n#content main .play-page .play-hall .custom-checkbox+label {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    user-select: none;\r\n}\r\n\r\n\r\n#content main .play-page .play-hall .custom-checkbox+label::before {\r\n    content: '';\r\n    display: inline-block;\r\n    width: 1.2em;\r\n    height: 1.2em;\r\n    flex-shrink: 0;\r\n    flex-grow: 0;\r\n    border: 1px solid #adb5bd;\r\n    border-radius: 0.2em;\r\n    background-repeat: no-repeat;\r\n    background-position: center center;\r\n    background-size: 50% 50%;\r\n    cursor: pointer;\r\n    transition: .5s ease-in-out;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {\r\n    border-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):active+label::before {\r\n    background-color: #b3d7ff;\r\n    border-color: #b3d7ff;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:checked+label::before {\r\n    border-color: #0ec91e;\r\n    background-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:disabled+label::before {\r\n    background-color: #ff0000;\r\n    border-color: #ff0000;\r\n}\r\n\r\n#content main .play-page .select-tickets-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .order-total-cost  {\r\n    display: flex;\r\n    padding: 1vmax;\r\n}\r\n#content main .play-page .order-total-cost .total-cost-content {\r\n    display: flex;\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .order-total-cost .total-cost-content div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .complete-order-section {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1vmin 0 2vmin;\r\n    border-top: 3px solid #f4f4f4;;\r\n}\r\n\r\n#content main .play-page .complete-order-section a {\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n    margin: 0.5em;\r\n}\r\n\r\n#content main .play-page .complete-order-section a:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.message-window {\r\n    position: fixed;\r\n    left: 0;\r\n    right: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    background-color: rgb(0,0,0); /* Затемнение фона */\r\n    background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */\r\n    z-index: 1; /* Фон на нижнем слое */\r\n    overflow: auto; /* При необходимости, то появиться прокрутка */\r\n}\r\n"]}]);
+___CSS_LOADER_EXPORT___.push([module.i, "\r\n#content main .play-page .title {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .title .title-content {\r\n    background: #ff0000;\r\n    color: white;\r\n    font-size: inherit;\r\n    padding: 1.6vmin;\r\n}\r\n\r\n#content main .play-page .short-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .short-info div {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .other-dates a {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n#content main .play-page .other-dates a:hover {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .play-hall {\r\n    width: 80%;\r\n    justify-content: center;\r\n    margin: auto;\r\n    padding: 2vmax 0 2vmax 0;\r\n}\r\n\r\n#content main .play-page .play-hall .row {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .play-hall .seat {\r\n    width: auto;\r\n    margin-right: 0.25em;\r\n    margin-bottom: 0.25em;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox {\r\n    position: absolute;\r\n    z-index: -1;\r\n    opacity: 0;\r\n}\r\n#content main .play-page .play-hall .custom-checkbox+label {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    user-select: none;\r\n}\r\n\r\n\r\n#content main .play-page .play-hall .custom-checkbox+label::before {\r\n    content: '';\r\n    display: inline-block;\r\n    width: 4vmin;\r\n    height: 4vmin;\r\n    flex-shrink: 0;\r\n    flex-grow: 0;\r\n    border: 1px solid #adb5bd;\r\n    border-radius: 0.2em;\r\n    background-repeat: no-repeat;\r\n    background-position: center center;\r\n    background-size: 50% 50%;\r\n    cursor: pointer;\r\n    transition: .5s ease-in-out;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {\r\n    border-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):active+label::before {\r\n    background-color: #b3d7ff;\r\n    border-color: #b3d7ff;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:checked+label::before {\r\n    border-color: #0ec91e;\r\n    background-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:disabled+label::before {\r\n    background-color: #ff0000;\r\n    border-color: #ff0000;\r\n}\r\n\r\n#content main .play-page .select-tickets-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .order-total-cost  {\r\n    display: flex;\r\n    padding: 1vmax;\r\n}\r\n#content main .play-page .order-total-cost .total-cost-content {\r\n    display: flex;\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .order-total-cost .total-cost-content div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .complete-order-section {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1vmin 0 2vmin;\r\n    border-top: 3px solid #f4f4f4;;\r\n}\r\n\r\n#content main .play-page .complete-order-section a {\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n    margin: 0.5em;\r\n}\r\n\r\n#content main .play-page .complete-order-section a:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.message-window {\r\n    position: fixed;\r\n    left: 0;\r\n    right: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    background-color: rgb(0,0,0); /* Затемнение фона */\r\n    background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */\r\n    z-index: 1; /* Фон на нижнем слое */\r\n    overflow: auto; /* При необходимости, то появиться прокрутка */\r\n}\r\n", "",{"version":3,"sources":["play-page.css"],"names":[],"mappings":";AACA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,mBAAmB;IACnB,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;AACpB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,UAAU;IACV,uBAAuB;IACvB,YAAY;IACZ,wBAAwB;AAC5B;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,WAAW;IACX,oBAAoB;IACpB,qBAAqB;AACzB;;AAEA;IACI,kBAAkB;IAClB,WAAW;IACX,UAAU;AACd;AACA;IACI,oBAAoB;IACpB,mBAAmB;IACnB,iBAAiB;AACrB;;;AAGA;IACI,WAAW;IACX,qBAAqB;IACrB,YAAY;IACZ,aAAa;IACb,cAAc;IACd,YAAY;IACZ,yBAAyB;IACzB,oBAAoB;IACpB,4BAA4B;IAC5B,kCAAkC;IAClC,wBAAwB;IACxB,eAAe;IACf,2BAA2B;AAC/B;;AAEA;IACI,qBAAqB;AACzB;;AAEA;IACI,yBAAyB;IACzB,qBAAqB;AACzB;;AAEA;IACI,qBAAqB;IACrB,yBAAyB;AAC7B;;AAEA;IACI,yBAAyB;IACzB,qBAAqB;AACzB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,uBAAuB;AAC3B;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,cAAc;AAClB;AACA;IACI,aAAa;IACb,cAAc;IACd,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,kBAAkB;AACtB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,sBAAsB;IACtB,6BAA6B;AACjC;;AAEA;IACI,cAAc;IACd,mBAAmB;IACnB,YAAY;IACZ,aAAa;AACjB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,eAAe;IACf,OAAO;IACP,QAAQ;IACR,WAAW;IACX,YAAY;;IAEZ,4BAA4B,EAAE,oBAAoB;IAClD,iCAAiC,EAAE,8BAA8B;IACjE,UAAU,EAAE,uBAAuB;IACnC,cAAc,EAAE,8CAA8C;AAClE","file":"play-page.css","sourcesContent":["\r\n#content main .play-page .title {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .title .title-content {\r\n    background: #ff0000;\r\n    color: white;\r\n    font-size: inherit;\r\n    padding: 1.6vmin;\r\n}\r\n\r\n#content main .play-page .short-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .short-info div {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .other-dates a {\r\n    padding: 1vmin;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .other-dates a.selected-date:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n#content main .play-page .other-dates a:hover {\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .play-hall {\r\n    width: 80%;\r\n    justify-content: center;\r\n    margin: auto;\r\n    padding: 2vmax 0 2vmax 0;\r\n}\r\n\r\n#content main .play-page .play-hall .row {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .play-hall .seat {\r\n    width: auto;\r\n    margin-right: 0.25em;\r\n    margin-bottom: 0.25em;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox {\r\n    position: absolute;\r\n    z-index: -1;\r\n    opacity: 0;\r\n}\r\n#content main .play-page .play-hall .custom-checkbox+label {\r\n    display: inline-flex;\r\n    align-items: center;\r\n    user-select: none;\r\n}\r\n\r\n\r\n#content main .play-page .play-hall .custom-checkbox+label::before {\r\n    content: '';\r\n    display: inline-block;\r\n    width: 4vmin;\r\n    height: 4vmin;\r\n    flex-shrink: 0;\r\n    flex-grow: 0;\r\n    border: 1px solid #adb5bd;\r\n    border-radius: 0.2em;\r\n    background-repeat: no-repeat;\r\n    background-position: center center;\r\n    background-size: 50% 50%;\r\n    cursor: pointer;\r\n    transition: .5s ease-in-out;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {\r\n    border-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:not(:disabled):active+label::before {\r\n    background-color: #b3d7ff;\r\n    border-color: #b3d7ff;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:checked+label::before {\r\n    border-color: #0ec91e;\r\n    background-color: #0ec91e;\r\n}\r\n\r\n#content main .play-page .play-hall .custom-checkbox:disabled+label::before {\r\n    background-color: #ff0000;\r\n    border-color: #ff0000;\r\n}\r\n\r\n#content main .play-page .select-tickets-info {\r\n    padding: 1vmax;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n\r\n#content main .play-page .select-tickets-info .category-line div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .order-total-cost  {\r\n    display: flex;\r\n    padding: 1vmax;\r\n}\r\n#content main .play-page .order-total-cost .total-cost-content {\r\n    display: flex;\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n#content main .play-page .order-total-cost .total-cost-content div {\r\n    margin-left: 1vmin;\r\n}\r\n\r\n#content main .play-page .complete-order-section {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    padding: 1vmin 0 2vmin;\r\n    border-top: 3px solid #f4f4f4;;\r\n}\r\n\r\n#content main .play-page .complete-order-section a {\r\n    padding: 0.2em;\r\n    background: #ff0000;\r\n    color: white;\r\n    margin: 0.5em;\r\n}\r\n\r\n#content main .play-page .complete-order-section a:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.message-window {\r\n    position: fixed;\r\n    left: 0;\r\n    right: 0;\r\n    width: 100%;\r\n    height: 100%;\r\n\r\n    background-color: rgb(0,0,0); /* Затемнение фона */\r\n    background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */\r\n    z-index: 1; /* Фон на нижнем слое */\r\n    overflow: auto; /* При необходимости, то появиться прокрутка */\r\n}\r\n"]}]);
+// Exports
+/* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/user-page.css":
+/*!*********************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/user-page.css ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
+// Module
+___CSS_LOADER_EXPORT___.push([module.i, ".user-page .user-title {\r\n    text-align: center;\r\n    font-size: 1.5em;\r\n    padding-bottom: 1vmax;\r\n    border-bottom: 0.3vmin solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-header {\r\n\r\n    border-bottom: 1.5vmax solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-header .item-line {\r\n    display: flex;\r\n    padding: 0.4em;\r\n}\r\n\r\n.user-page .user-header .item-line div {\r\n    padding-right: 0.4em;\r\n}\r\n\r\n.user-page .user-order-list {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.user-page .user-order-list .order-item {\r\n    padding: 1em;\r\n    border-bottom: 0.1em solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-order-list .order-item .play-name {\r\n    display: inline-block;\r\n    padding: 0.3em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n.user-page .user-order-list .item-line {\r\n    display: flex;\r\n    padding: 0.1em 0.1em 0.1em 1em;\r\n}\r\n\r\n.user-page .user-order-list .item-line div {\r\n    padding-right: 0.2em;\r\n}\r\n\r\n.user-page .user-order-list .status {\r\n    display: inline-block;\r\n    padding-right: 1em;\r\n    padding-bottom: 0.3em;\r\n    text-decoration: underline;\r\n    color: white;\r\n}\r\n\r\n.user-page .user-order-list .completed {\r\n    background: #0ec91e;\r\n}\r\n.user-page .user-order-list .processing {\r\n    background: #ff0000;\r\n}\r\n\r\n.user-page .user-order-list .complete-btn {\r\n    padding: 0.3em;\r\n    background: #ff0000;\r\n    color: white;\r\n    display: inline-block;\r\n    float: right;\r\n}\r\n\r\n.user-page .user-order-list .complete-btn:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.user-page .add-courier .title {\r\n    border-bottom: 0.2em solid #f4f4f4;\r\n}\r\n\r\n.user-page .add-courier .add-form {\r\n    padding: 1em;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n\r\n.user-page .add-courier .msg {\r\n    padding: 1vmin;\r\n    color: gray;\r\n}\r\n\r\n.user-page .add-courier .add-btn {\r\n    margin-top: 1vmax;\r\n    padding: 1vmin;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n.user-page .add-courier .add-btn:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n", "",{"version":3,"sources":["user-page.css"],"names":[],"mappings":"AAAA;IACI,kBAAkB;IAClB,gBAAgB;IAChB,qBAAqB;IACrB,oCAAoC;AACxC;;AAEA;;IAEI,oCAAoC;AACxC;;AAEA;IACI,aAAa;IACb,cAAc;AAClB;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,YAAY;IACZ,kCAAkC;AACtC;;AAEA;IACI,qBAAqB;IACrB,cAAc;IACd,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,8BAA8B;AAClC;;AAEA;IACI,oBAAoB;AACxB;;AAEA;IACI,qBAAqB;IACrB,kBAAkB;IAClB,qBAAqB;IACrB,0BAA0B;IAC1B,YAAY;AAChB;;AAEA;IACI,mBAAmB;AACvB;AACA;IACI,mBAAmB;AACvB;;AAEA;IACI,cAAc;IACd,mBAAmB;IACnB,YAAY;IACZ,qBAAqB;IACrB,YAAY;AAChB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,kCAAkC;AACtC;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,sBAAsB;IACtB,mBAAmB;AACvB;;AAEA;IACI,cAAc;IACd,WAAW;AACf;;AAEA;IACI,iBAAiB;IACjB,cAAc;IACd,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,iBAAiB;IACjB,cAAc;AAClB","file":"user-page.css","sourcesContent":[".user-page .user-title {\r\n    text-align: center;\r\n    font-size: 1.5em;\r\n    padding-bottom: 1vmax;\r\n    border-bottom: 0.3vmin solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-header {\r\n\r\n    border-bottom: 1.5vmax solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-header .item-line {\r\n    display: flex;\r\n    padding: 0.4em;\r\n}\r\n\r\n.user-page .user-header .item-line div {\r\n    padding-right: 0.4em;\r\n}\r\n\r\n.user-page .user-order-list {\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.user-page .user-order-list .order-item {\r\n    padding: 1em;\r\n    border-bottom: 0.1em solid #f4f4f4;\r\n}\r\n\r\n.user-page .user-order-list .order-item .play-name {\r\n    display: inline-block;\r\n    padding: 0.3em;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n.user-page .user-order-list .item-line {\r\n    display: flex;\r\n    padding: 0.1em 0.1em 0.1em 1em;\r\n}\r\n\r\n.user-page .user-order-list .item-line div {\r\n    padding-right: 0.2em;\r\n}\r\n\r\n.user-page .user-order-list .status {\r\n    display: inline-block;\r\n    padding-right: 1em;\r\n    padding-bottom: 0.3em;\r\n    text-decoration: underline;\r\n    color: white;\r\n}\r\n\r\n.user-page .user-order-list .completed {\r\n    background: #0ec91e;\r\n}\r\n.user-page .user-order-list .processing {\r\n    background: #ff0000;\r\n}\r\n\r\n.user-page .user-order-list .complete-btn {\r\n    padding: 0.3em;\r\n    background: #ff0000;\r\n    color: white;\r\n    display: inline-block;\r\n    float: right;\r\n}\r\n\r\n.user-page .user-order-list .complete-btn:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n.user-page .add-courier .title {\r\n    border-bottom: 0.2em solid #f4f4f4;\r\n}\r\n\r\n.user-page .add-courier .add-form {\r\n    padding: 1em;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n\r\n.user-page .add-courier .msg {\r\n    padding: 1vmin;\r\n    color: gray;\r\n}\r\n\r\n.user-page .add-courier .add-btn {\r\n    margin-top: 1vmax;\r\n    padding: 1vmin;\r\n    background: #ff0000;\r\n    color: white;\r\n}\r\n\r\n.user-page .add-courier .add-btn:hover {\r\n    background: white;\r\n    color: #ff0000;\r\n}\r\n\r\n"]}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -767,7 +811,7 @@ var LogoutBtn = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
 /* harmony default export */ __webpack_exports__["default"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   id: 'login-menu',
   children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    children: 'User: '
+    children: 'Status: '
   }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     id: 'user-status',
     children: 'guest'
@@ -786,51 +830,9 @@ var LogoutBtn = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
-/* harmony import */ var _PlayList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayList */ "./src/components/main-content/PlayList.js");
-/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
-/* harmony import */ var _PlayPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PlayPage */ "./src/components/main-content/PlayPage.js");
+/* harmony import */ var _Loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Loader */ "./src/components/main-content/Loader.js");
 
 
-
-
-var plays = [{
-  name: 'Synthesizer love',
-  author: 'A. Eykborn',
-  genre: 'Comedy',
-  dates: [{
-    id: 1,
-    date: '2020-02-04'
-  }, {
-    id: 2,
-    date: '2020-02-15'
-  }, {
-    id: 3,
-    date: '2020-02-27'
-  }]
-}];
-var date = {
-  id: 2,
-  date: '2020-02-15',
-  play: {
-    name: 'Synthesizer love',
-    author: 'A. Eykborn',
-    genre: 'Comedy',
-    dates: [{
-      id: 1,
-      date: '2020-02-04'
-    }, {
-      id: 2,
-      date: '2020-02-15'
-    }, {
-      id: 3,
-      date: '2020-02-27'
-    }]
-  }
-};
-var PlayListTitle = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-  classList: ['title'],
-  children: 'Plays'
-});
 /* harmony default export */ __webpack_exports__["default"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   type: 'section',
   id: 'content',
@@ -838,102 +840,30 @@ var PlayListTitle = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     type: 'main',
     id: 'main-container',
     // onload: () => ContentManager.roteNewUrl('/plays'),
-    children: Object(_PlayPage__WEBPACK_IMPORTED_MODULE_3__["default"])(date)
+    children: _Loader__WEBPACK_IMPORTED_MODULE_1__["default"] //Loader
+
   })
 }));
 
 /***/ }),
 
-/***/ "./src/components/main-content/Hall.js":
-/*!*********************************************!*\
-  !*** ./src/components/main-content/Hall.js ***!
-  \*********************************************/
+/***/ "./src/components/main-content/Loader.js":
+/*!***********************************************!*\
+  !*** ./src/components/main-content/Loader.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
-/* harmony import */ var _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../managers/OrderManager */ "./src/managers/OrderManager.js");
+/* harmony import */ var _css_loader_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css/loader.css */ "./src/css/loader.css");
+/* harmony import */ var _css_loader_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
-
-function checkSeat() {}
-
-function getSeats(rowId, numberSeat, orderedTicket) {
-  var seats = [];
-
-  var _loop = function _loop(i) {
-    var saleCheck = orderedTicket.filter(function (ticket) {
-      return ticket.row === rowId + 1 && ticket.seat === i + 1;
-    }).length > 0;
-    seats.push(Seat(rowId + 1, i + 1, saleCheck ? seatType.SALE : seatType.DEFAULT));
-  };
-
-  for (var i = 0; i < numberSeat; i++) {
-    _loop(i);
-  }
-
-  return seats;
-}
-
-var seatType = {
-  SALE: true,
-  DEFAULT: false
-};
-
-var Seat = function Seat(row, number, type) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['seat'],
-    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      type: 'input',
-      name: 'seat-' + row + number,
-      inputType: 'checkbox',
-      classList: ['custom-checkbox'],
-      disabled: type,
-      onclick: function onclick(e) {
-        console.log(e);
-      }
-    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      type: 'label',
-      "for": 'seat-' + row + number,
-      onclick: function onclick(e) {
-        var checkbox = document.querySelector("input[name=" + this["for"] + "]");
-        checkbox.checked = !checkbox.checked;
-        if (type) return;
-
-        if (checkbox.checked) {
-          _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__["default"].getInstance().addTicket({
-            row: row,
-            seat: number
-          });
-        } else {
-          _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__["default"].getInstance().deleteTicket({
-            row: row,
-            seat: number
-          });
-        }
-      }
-    })]
-  });
-};
-
-var RowSeats = function RowSeats(rowId, numberSeat, orderedTicket) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['row'],
-    children: getSeats(rowId, numberSeat, orderedTicket)
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (function (rowsSchema, orderedTicket) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    id: 'play-hall',
-    classList: ['play-hall'],
-    children: rowsSchema.map(function (row, i) {
-      return RowSeats(i, row.seats, orderedTicket);
-    })
-  });
-});
+/* harmony default export */ __webpack_exports__["default"] = (Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+  classList: ['lds-dual-ring']
+}));
 
 /***/ }),
 
@@ -949,9 +879,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
 /* harmony import */ var _ModalWindow__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalWindow */ "./src/components/main-content/ModalWindow.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
-/* harmony import */ var _header_LoginMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../header/LoginMenu */ "./src/components/header/LoginMenu.js");
-/* harmony import */ var _managers_UserManager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../managers/UserManager */ "./src/managers/UserManager.js");
-
+/* harmony import */ var _managers_UserManager__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../managers/UserManager */ "./src/managers/UserManager.js");
 
 
 
@@ -968,6 +896,7 @@ var LoginForm = Object(_ModalWindow__WEBPACK_IMPORTED_MODULE_1__["ModalForm"])([
   name: "password"
 }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
   type: 'label',
+  id: 'login-msg',
   classList: ['msg'],
   children: 'Input data to input forms'
 }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
@@ -985,9 +914,18 @@ var LoginForm = Object(_ModalWindow__WEBPACK_IMPORTED_MODULE_1__["ModalForm"])([
         password: password
       })
     }).then(function (resp) {
+      if (!resp.ok) {
+        console.log(resp.status);
+        _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][resp.status] ? _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][resp.status]() : _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"].DEFAULT();
+      }
+
       return resp.json();
     }).then(function (user) {
-      _managers_UserManager__WEBPACK_IMPORTED_MODULE_4__["default"].getInstance().setUser(user);
+      _managers_UserManager__WEBPACK_IMPORTED_MODULE_3__["default"].getInstance().setUser(user);
+    })["catch"](function (reason) {
+      var loginMsgDOM = document.getElementById("login-msg"); // const error = JSON.parse(reason.message)
+
+      loginMsgDOM.innerHTML = reason;
     });
   }
 })]);
@@ -1011,13 +949,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_modal_window_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_modal_window_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
-var CloseBtn = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-  type: 'span',
-  onclick: function onclick(e) {
-    document.getElementById('login-form').style.display = 'none';
-  },
-  children: 'x'
-});
 var ModalForm = function ModalForm(children) {
   return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     id: 'auth-form',
@@ -1039,7 +970,7 @@ var Title = function Title(title) {
   return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
     id: id,
     classList: ['modal', 'login-form'],
-    onclick: function onclick(e) {
+    onload: function onload() {
       window.onclick = function (event) {
         var modals = Array.from(document.getElementsByClassName("modal"));
         modals.forEach(function (modal, index, modals) {
@@ -1051,262 +982,6 @@ var Title = function Title(title) {
       };
     },
     children: children
-  });
-});
-
-/***/ }),
-
-/***/ "./src/components/main-content/PlayItem.js":
-/*!*************************************************!*\
-  !*** ./src/components/main-content/PlayItem.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
-/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
-
-
-/**
- *
- * @param title {string}
- * @returns {HTMLDivElement}
- * @constructor
- */
-
-var PlayTitle = function PlayTitle(title) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['play-title'],
-    children: title
-  });
-};
-/**
- *
- * @param author {string}
- * @param genre {string}
- * @returns {HTMLDivElement}
- * @constructor
- */
-
-
-var PlayInfo = function PlayInfo(author, genre) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['play-info'],
-    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      classList: ['play-author'],
-      children: author
-    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      classList: ['play-genre'],
-      children: genre
-    })]
-  });
-};
-/**
- *
- * @param dates {Array}
- * @returns {HTMLDivElement}
- * @constructor
- */
-
-
-var PlayDates = function PlayDates(dates) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['play-dates'],
-    children: dates.map(function (date) {
-      return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-        type: 'a',
-        classList: ['date-link'],
-        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date)),
-        onclick: function onclick(e) {
-          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__["default"].roteNewUrl('/date/' + date.id);
-        }
-      });
-    })
-  });
-};
-/**
- *
- * @param name {string}
- * @param author {string}
- * @param genre {string}
- * @param dates {Array}
- * @returns {HTMLDivElement}
- */
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (name, author, genre, dates) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['play'],
-    children: [PlayTitle(name), PlayInfo(author, genre), PlayDates(dates)]
-  });
-});
-
-/***/ }),
-
-/***/ "./src/components/main-content/PlayList.js":
-/*!*************************************************!*\
-  !*** ./src/components/main-content/PlayList.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
-/* harmony import */ var _PlayItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayItem */ "./src/components/main-content/PlayItem.js");
-
-
-/**
- *
- * @param plays {Array}
- * @returns {HTMLDivElement}
- */
-
-/* harmony default export */ __webpack_exports__["default"] = (function (plays) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['plays'],
-    children: plays.map(function (play) {
-      return Object(_PlayItem__WEBPACK_IMPORTED_MODULE_1__["default"])(play.name, play.author, play.genre, play.dates);
-    })
-  });
-});
-
-/***/ }),
-
-/***/ "./src/components/main-content/PlayPage.js":
-/*!*************************************************!*\
-  !*** ./src/components/main-content/PlayPage.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util.js");
-/* harmony import */ var _Hall__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hall */ "./src/components/main-content/Hall.js");
-/* harmony import */ var _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../managers/OrderManager */ "./src/managers/OrderManager.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
-/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../managers/ContentManager */ "./src/managers/ContentManager.js");
-
-
-
-
-
-
-var PlayTitle = function PlayTitle(name) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['title'],
-    children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      classList: ['title-content'],
-      children: name
-    })
-  });
-};
-
-var PlayInfo = function PlayInfo(genre, author) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['short-info'],
-    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      children: 'Genre: ' + genre
-    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      children: 'Author: ' + author
-    })]
-  });
-};
-
-var OtherDates = function OtherDates(dates, selectedDate) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['other-dates'],
-    children: dates.map(function (date) {
-      return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-        type: 'a',
-        classList: ['date-link', date.id === selectedDate.id ? 'selected-date' : null],
-        onclick: function onclick(e) {
-          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].roteNewUrl('/date/' + date.id);
-        },
-        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date))
-      });
-    })
-  });
-};
-
-var CategoryInfo = function CategoryInfo(label, count) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['category-line'],
-    children: [label + ':', Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      id: label.toLowerCase().trim().replace(' ', '-') + '-count',
-      children: count + ''
-    })]
-  });
-};
-
-var TicketInfo = function TicketInfo() {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['select-tickets-info'],
-    children: [CategoryInfo('Cheap ticket', 0), CategoryInfo('Default ticket', 0), CategoryInfo("Expensive ticket", 0)]
-  });
-};
-
-var TotalCost = function TotalCost() {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['order-total-cost'],
-    children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      classList: ['total-cost-content'],
-      children: ['Total cost: ', Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-        id: 'order-total-cost',
-        children: '0'
-      })]
-    })
-  });
-};
-
-var CompleteOrderSection = function CompleteOrderSection(date) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    classList: ['complete-order-section'],
-    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      type: 'a',
-      children: 'Order',
-      onclick: function onclick(e) {
-        _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__["default"].getInstance().sendOrder(date);
-      }
-    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-      type: 'a',
-      children: 'Cancel order'
-    })]
-  });
-};
-
-var rowSchema = [{
-  seats: 8
-}, {
-  seats: 8
-}, {
-  seats: 10
-}, {
-  seats: 10
-}, {
-  seats: 14
-}, {
-  seats: 14
-}];
-var orderedTickets = [];
-/* harmony default export */ __webpack_exports__["default"] = (function (date) {
-  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
-    id: 'date-' + date.id,
-    classList: ['play-page'],
-    onload: function onload() {
-      _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__["default"].newInstance();
-      fetch(_constants__WEBPACK_IMPORTED_MODULE_3__["SERVER_URL"] + '/ordered-tickets/' + date.id).then(function (response) {
-        return response.json();
-      }).then(function (orderedTickets) {
-        var playHall = document.getElementById('play-hall');
-        playHall.innerHTML = '';
-        playHall.appendChild(Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(rowSchema, orderedTickets));
-      });
-    },
-    children: [PlayTitle(date.play.name), PlayInfo(date.play.genre, date.play.author), OtherDates(date.play.dates, date), Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(rowSchema, orderedTickets), TicketInfo(), TotalCost(), CompleteOrderSection(date)]
   });
 });
 
@@ -1391,7 +1066,7 @@ var RegistrationForm = Object(_ModalWindow__WEBPACK_IMPORTED_MODULE_1__["ModalFo
         phone: phone
       });
     } else {
-      document.getElementById('reg-msg').innerText = 'Something went wrong...';
+      document.getElementById('reg-msg').innerText = 'Email or password incorrect';
     }
   }
 })]);
@@ -1399,11 +1074,639 @@ var RegistrationForm = Object(_ModalWindow__WEBPACK_IMPORTED_MODULE_1__["ModalFo
 
 /***/ }),
 
+/***/ "./src/components/main-content/play-list/PlayItem.js":
+/*!***********************************************************!*\
+  !*** ./src/components/main-content/play-list/PlayItem.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../managers/ContentManager */ "./src/managers/ContentManager.js");
+
+
+/**
+ *
+ * @param title {string}
+ * @returns {HTMLDivElement}
+ * @constructor
+ */
+
+var PlayTitle = function PlayTitle(title) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['play-title'],
+    children: title
+  });
+};
+/**
+ *
+ * @param author {string}
+ * @param genre {string}
+ * @returns {HTMLDivElement}
+ * @constructor
+ */
+
+
+var PlayInfo = function PlayInfo(author, genre) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['play-info'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['play-author'],
+      children: author
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['play-genre'],
+      children: genre
+    })]
+  });
+};
+/**
+ *
+ * @param dates {Array}
+ * @returns {HTMLDivElement}
+ * @constructor
+ */
+
+
+var PlayDates = function PlayDates(dates) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['play-dates'],
+    children: dates.map(function (date) {
+      return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+        type: 'a',
+        classList: ['date-link'],
+        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date)),
+        onclick: function onclick(e) {
+          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_1__["default"].roteNewUrl('/date/' + date.id);
+        }
+      });
+    })
+  });
+};
+/**
+ *
+ * @param name {string}
+ * @param author {string}
+ * @param genre {string}
+ * @param dates {Array}
+ * @returns {HTMLDivElement}
+ */
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (name, author, genre, dates) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['play'],
+    children: [PlayTitle(name), PlayInfo(author, genre), PlayDates(dates)]
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/play-list/PlayList.js":
+/*!***********************************************************!*\
+  !*** ./src/components/main-content/play-list/PlayList.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _PlayItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./PlayItem */ "./src/components/main-content/play-list/PlayItem.js");
+
+
+/**
+ *
+ * @param plays {Array}
+ * @returns {HTMLDivElement}
+ */
+
+/* harmony default export */ __webpack_exports__["default"] = (function (plays) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['plays'],
+    children: plays.map(function (play) {
+      return Object(_PlayItem__WEBPACK_IMPORTED_MODULE_1__["default"])(play.name, play.author, play.genre, play.dates.sort(function (d1, d2) {
+        return new Date(d1.date) - new Date(d2.date);
+      }));
+    })
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/play-page/Hall.js":
+/*!*******************************************************!*\
+  !*** ./src/components/main-content/play-page/Hall.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../managers/OrderManager */ "./src/managers/OrderManager.js");
+
+
+
+function checkSeat() {}
+
+function getSeats(rowId, numberSeat, orderedTicket) {
+  var seats = [];
+
+  var _loop = function _loop(i) {
+    var saleCheck = orderedTicket.filter(function (ticket) {
+      return ticket.row === rowId + 1 && ticket.seat === i + 1;
+    }).length > 0;
+    seats.push(Seat(rowId + 1, i + 1, saleCheck ? seatType.SALE : seatType.DEFAULT));
+  };
+
+  for (var i = 0; i < numberSeat; i++) {
+    _loop(i);
+  }
+
+  return seats;
+}
+
+var seatType = {
+  SALE: true,
+  DEFAULT: false
+};
+
+var Seat = function Seat(row, number, type) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['seat'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      name: 'seat-' + row + number,
+      inputType: 'checkbox',
+      classList: ['custom-checkbox'],
+      disabled: type,
+      onclick: function onclick(e) {
+        console.log(e);
+      }
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'label',
+      "for": 'seat-' + row + number,
+      onclick: function onclick(e) {
+        var checkbox = document.querySelector("input[name=" + this["for"] + "]");
+        checkbox.checked = !checkbox.checked;
+        if (type) return;
+
+        if (checkbox.checked) {
+          _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__["default"].getInstance().addTicket({
+            row: row,
+            seat: number
+          });
+        } else {
+          _managers_OrderManager__WEBPACK_IMPORTED_MODULE_1__["default"].getInstance().deleteTicket({
+            row: row,
+            seat: number
+          });
+        }
+      }
+    })]
+  });
+};
+
+var RowSeats = function RowSeats(rowId, numberSeat, orderedTicket) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['row'],
+    children: getSeats(rowId, numberSeat, orderedTicket)
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (function (rowsSchema, orderedTicket) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    id: 'play-hall',
+    classList: ['play-hall'],
+    children: rowsSchema.map(function (row, i) {
+      return RowSeats(i, row.seats, orderedTicket);
+    })
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/play-page/PlayPage.js":
+/*!***********************************************************!*\
+  !*** ./src/components/main-content/play-page/PlayPage.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _Hall__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Hall */ "./src/components/main-content/play-page/Hall.js");
+/* harmony import */ var _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../managers/OrderManager */ "./src/managers/OrderManager.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../constants */ "./src/constants.js");
+/* harmony import */ var _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../managers/ContentManager */ "./src/managers/ContentManager.js");
+
+
+
+
+
+
+var PlayTitle = function PlayTitle(name) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['title'],
+    children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['title-content'],
+      children: name
+    })
+  });
+};
+
+var PlayInfo = function PlayInfo(genre, author) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['short-info'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      children: 'Genre: ' + genre
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      children: 'Author: ' + author
+    })]
+  });
+};
+
+var OtherDates = function OtherDates(dates, selectedDate) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['other-dates'],
+    children: dates.map(function (date) {
+      return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+        type: 'a',
+        classList: ['date-link', date.id === selectedDate.id ? 'selected-date' : null],
+        onclick: function onclick(e) {
+          return _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].roteNewUrl('/date/' + date.id);
+        },
+        children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(date.date))
+      });
+    })
+  });
+};
+
+var CategoryInfo = function CategoryInfo(label, count) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['category-line'],
+    children: [label + ':', Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      id: label.toLowerCase().trim().replace(' ', '-') + '-count',
+      children: count + ''
+    })]
+  });
+};
+
+var TicketInfo = function TicketInfo() {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['select-tickets-info'],
+    children: [CategoryInfo('Cheap ticket', 0), CategoryInfo('Default ticket', 0), CategoryInfo("Expensive ticket", 0)]
+  });
+};
+
+var TotalCost = function TotalCost() {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['order-total-cost'],
+    children: Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['total-cost-content'],
+      children: ['Total cost: ', Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+        id: 'order-total-cost',
+        children: '0'
+      })]
+    })
+  });
+};
+
+var CompleteOrderSection = function CompleteOrderSection(date) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['complete-order-section'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'a',
+      children: 'Order',
+      onclick: function onclick(e) {
+        _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__["default"].getInstance().sendOrder(date);
+      }
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'a',
+      children: 'Cancel order',
+      onclick: function onclick(e) {
+        _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].roteNewUrl("/date/" + date.id);
+      }
+    })]
+  });
+};
+
+var rowSchema = [{
+  seats: 8
+}, {
+  seats: 8
+}, {
+  seats: 10
+}, {
+  seats: 10
+}, {
+  seats: 14
+}, {
+  seats: 14
+}];
+var orderedTickets = [];
+/* harmony default export */ __webpack_exports__["default"] = (function (date) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    id: 'date-' + date.id,
+    classList: ['play-page'],
+    onload: function onload() {
+      _managers_OrderManager__WEBPACK_IMPORTED_MODULE_2__["default"].newInstance();
+      fetch(_constants__WEBPACK_IMPORTED_MODULE_3__["SERVER_URL"] + '/hall-info/' + date.id).then(function (response) {
+        return response.json();
+      }).then(function (hallInfo) {
+        var playHall = document.getElementById('play-hall');
+        playHall.innerHTML = '';
+        playHall.appendChild(Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(hallInfo.hallSchema, hallInfo.allTickets));
+      });
+    },
+    children: [PlayTitle(date.play.name), PlayInfo(date.play.genre, date.play.author), OtherDates(date.play.dates.sort(function (d1, d2) {
+      return new Date(d1.date) - new Date(d2.date);
+    }), date), Object(_Hall__WEBPACK_IMPORTED_MODULE_1__["default"])(rowSchema, orderedTickets), TicketInfo(), TotalCost(), CompleteOrderSection(date)]
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/users/AdminPage.js":
+/*!********************************************************!*\
+  !*** ./src/components/main-content/users/AdminPage.js ***!
+  \********************************************************/
+/*! exports provided: AdminHeader, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminHeader", function() { return AdminHeader; });
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _UserPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserPage */ "./src/components/main-content/users/UserPage.js");
+/* harmony import */ var _ItemLine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ItemLine */ "./src/components/main-content/users/ItemLine.js");
+/* harmony import */ var _managers_UserManager__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../managers/UserManager */ "./src/managers/UserManager.js");
+
+
+
+
+var EMAIL_PATTERN = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+var PASSWORD_PATTERN = /^[a-zA-z]{1}[a-zA-Z0-9_/!/@/#/$/%/&]{3,20}$/i;
+var PHONE_PATTERN = /^\+\d{3}\(\d{2}\)\d{3}-\d{2}-\d{2}$/;
+var validator = {
+  emailTest: function emailTest(text) {
+    return EMAIL_PATTERN.test(text);
+  },
+  passwordTest: function passwordTest(text) {
+    return PASSWORD_PATTERN.test(text);
+  },
+  phoneTest: function phoneTest(text) {
+    return PHONE_PATTERN.test(text);
+  }
+};
+var AddCourier = Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+  classList: ['add-courier'],
+  children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['title'],
+    children: 'Add courier'
+  }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['add-form'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      placeholder: 'Input name',
+      name: 'name'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      inputType: 'password',
+      placeholder: 'Input password',
+      name: 'password'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      inputType: 'password',
+      placeholder: 'Confirm password',
+      name: 'confirm-password'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      placeholder: 'Input email',
+      name: 'email'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'input',
+      placeholder: 'Input phone',
+      name: 'phone'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      id: 'add-msg',
+      classList: ['msg'],
+      children: 'Input text to input forms'
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'a',
+      classList: ['add-btn'],
+      children: 'Add courier',
+      onclick: function onclick(e) {
+        var name = document.querySelector('.add-courier input[name="name"]').value;
+        var password = document.querySelector('.add-courier input[name="password"]').value;
+        var confirmPassword = document.querySelector('.add-courier input[name="confirm-password"]').value;
+        var email = document.querySelector('.add-courier input[name="email"]').value;
+        var phone = document.querySelector('.add-courier input[name="phone"]').value;
+
+        if (validator.emailTest(email) && validator.passwordTest(password) && validator.phoneTest(phone) && password === confirmPassword) {
+          _managers_UserManager__WEBPACK_IMPORTED_MODULE_3__["default"].getInstance().addCourier({
+            name: name,
+            password: password,
+            email: email,
+            phone: phone
+          });
+        } else {
+          document.getElementById('add-msg').innerText = 'Email or password incorrect';
+        }
+      }
+    })]
+  })]
+});
+var AdminHeader = function AdminHeader(user) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-header'],
+    children: [Object(_ItemLine__WEBPACK_IMPORTED_MODULE_2__["default"])('Name: ', user.name), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_2__["default"])('email: ', user.email), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_2__["default"])('phone', user.phone)]
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (function (admin) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-page'],
+    children: [Object(_UserPage__WEBPACK_IMPORTED_MODULE_1__["UserMenuTitle"])('Admin menu'), AdminHeader(admin), AddCourier]
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/users/CourierPage.js":
+/*!**********************************************************!*\
+  !*** ./src/components/main-content/users/CourierPage.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _ItemLine__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemLine */ "./src/components/main-content/users/ItemLine.js");
+/* harmony import */ var _css_user_page_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../css/user-page.css */ "./src/css/user-page.css");
+/* harmony import */ var _css_user_page_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_user_page_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _UserPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./UserPage */ "./src/components/main-content/users/UserPage.js");
+/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../constants */ "./src/constants.js");
+
+
+
+
+
+
+var OrderItem = function OrderItem(order) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    id: 'order-' + order.id,
+    classList: ['order-item'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['play-name'],
+      children: order.date.play.name
+    }), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Date: ', Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(order.date.date))), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Row: ', order.row + ''), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Seat: ', order.seat + ''), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Price: ', order.price.toFixed(2) + ' byn'), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      type: 'a',
+      classList: ['complete-btn'],
+      children: 'Complete',
+      onclick: function onclick(e) {
+        fetch(_constants__WEBPACK_IMPORTED_MODULE_4__["SERVER_URL"] + '/complete-order', {
+          method: 'POST',
+          body: JSON.stringify({
+            orderId: order.id
+          })
+        }).then(function (response) {
+          if (!response.ok) {
+            throw new Error('Something went wrong...');
+          }
+
+          return response.json();
+        }).then(function (answer) {
+          if (!answer.result) {
+            throw new Error('Failed to complete the order');
+          }
+
+          document.getElementById('order-' + order.id).remove();
+        })["catch"](function (reason) {
+          return alert(reason);
+        });
+      }
+    })]
+  });
+};
+
+var UserOrderList = function UserOrderList(orders) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-order-list'],
+    children: orders.map(function (order) {
+      return OrderItem(order);
+    })
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (function (user) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-page'],
+    children: [Object(_UserPage__WEBPACK_IMPORTED_MODULE_3__["UserMenuTitle"])('Courier menu'), Object(_UserPage__WEBPACK_IMPORTED_MODULE_3__["UserHeader"])(user), UserOrderList(user.orders)]
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/users/ItemLine.js":
+/*!*******************************************************!*\
+  !*** ./src/components/main-content/users/ItemLine.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+
+/* harmony default export */ __webpack_exports__["default"] = (function (property, value) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['item-line'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      children: property
+    }), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      children: value
+    })]
+  });
+});
+
+/***/ }),
+
+/***/ "./src/components/main-content/users/UserPage.js":
+/*!*******************************************************!*\
+  !*** ./src/components/main-content/users/UserPage.js ***!
+  \*******************************************************/
+/*! exports provided: UserHeader, UserMenuTitle, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserHeader", function() { return UserHeader; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserMenuTitle", function() { return UserMenuTitle; });
+/* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../util */ "./src/util.js");
+/* harmony import */ var _ItemLine__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ItemLine */ "./src/components/main-content/users/ItemLine.js");
+/* harmony import */ var _css_user_page_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../css/user-page.css */ "./src/css/user-page.css");
+/* harmony import */ var _css_user_page_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_css_user_page_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var UserHeader = function UserHeader(user) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-header'],
+    children: [Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Name: ', user.name), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('email: ', user.email), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('phone', user.phone), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Total orders price: ', user.orders.map(function (o) {
+      return o.price;
+    }).reduce(function (a, b) {
+      return a + b;
+    }, 0).toFixed(2) + ' byn'), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Count orders: ', user.orders.length + '')]
+  });
+};
+
+var OrderItem = function OrderItem(order) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['order-item'],
+    children: [Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['play-name'],
+      children: order.date.play.name
+    }), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Date: ', Object(_util__WEBPACK_IMPORTED_MODULE_0__["dateFormatter"])(new Date(order.date.date))), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Row: ', order.row + ''), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Seat: ', order.seat + ''), Object(_ItemLine__WEBPACK_IMPORTED_MODULE_1__["default"])('Price: ', order.price + ' byn'), Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+      classList: ['item-line', 'status', order.completed ? 'completed' : 'processing'],
+      children: order.completed ? 'Completed' : 'Processing'
+    })]
+  });
+};
+
+var UserMenuTitle = function UserMenuTitle(title) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-title'],
+    children: title
+  });
+};
+
+var UserOrderList = function UserOrderList(orders) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-order-list'],
+    children: orders.map(function (order) {
+      return OrderItem(order);
+    })
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (function (user) {
+  return Object(_util__WEBPACK_IMPORTED_MODULE_0__["node"])({
+    classList: ['user-page'],
+    children: [UserMenuTitle('User menu'), UserHeader(user), UserOrderList(user.orders)]
+  });
+});
+
+/***/ }),
+
 /***/ "./src/constants.js":
 /*!**************************!*\
   !*** ./src/constants.js ***!
   \**************************/
-/*! exports provided: SERVER_URL, ACCESS_CONTROL_ALLOW_HEADER, CONTENT_TYPE_JSON, HEADERS, ANSWER_STATUS */
+/*! exports provided: SERVER_URL, ACCESS_CONTROL_ALLOW_HEADER, CONTENT_TYPE_JSON, HEADERS, MAIN_CONTAINER_QUERY, ANSWER_STATUS, ERROR_ACCOUNT_CONST */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1412,17 +1715,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ACCESS_CONTROL_ALLOW_HEADER", function() { return ACCESS_CONTROL_ALLOW_HEADER; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CONTENT_TYPE_JSON", function() { return CONTENT_TYPE_JSON; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HEADERS", function() { return HEADERS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAIN_CONTAINER_QUERY", function() { return MAIN_CONTAINER_QUERY; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ANSWER_STATUS", function() { return ANSWER_STATUS; });
-var SERVER_URL = 'http://localhost:8080/data-api';
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ERROR_ACCOUNT_CONST", function() { return ERROR_ACCOUNT_CONST; });
+var SERVER_URL = '/data-api';
 var ACCESS_CONTROL_ALLOW_HEADER = "*";
 var CONTENT_TYPE_JSON = 'application/json;charset=utf-8';
 var HEADERS = {
   CONTENT_TYPE: "Content-Type",
   ACCESS_CONTROL: "Access-Control-Allow-Origin"
 };
+var MAIN_CONTAINER_QUERY = '#main-container';
 var ANSWER_STATUS = {
   COMPLETED: "COMPLETED"
 };
+var ERROR_ACCOUNT_CONST = {
+  404: function _() {
+    throw new Error('Wrong login or password');
+  },
+  406: function _() {
+    throw new Error('Incorrect data input');
+  },
+  500: function _() {
+    throw new Error('Something went wrong on server');
+  },
+  DEFAULT: function DEFAULT() {
+    throw new Error('Something went wrong...');
+  }
+};
+
+/***/ }),
+
+/***/ "./src/css/loader.css":
+/*!****************************!*\
+  !*** ./src/css/loader.css ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./loader.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/loader.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -1484,6 +1833,35 @@ module.exports = content.locals || {};
 
 /***/ }),
 
+/***/ "./src/css/user-page.css":
+/*!*******************************!*\
+  !*** ./src/css/user-page.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./user-page.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/user-page.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./src/fonts/GTWalsheimPro.otf":
 /*!*************************************!*\
   !*** ./src/fonts/GTWalsheimPro.otf ***!
@@ -1493,7 +1871,7 @@ module.exports = content.locals || {};
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "9891721f7144f76cbb97279b8774224d.otf");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "/9891721f7144f76cbb97279b8774224d.otf");
 
 /***/ }),
 
@@ -1541,31 +1919,72 @@ _managers_ContentManager__WEBPACK_IMPORTED_MODULE_4__["default"].documentStartRe
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getUrlPath", function() { return getUrlPath; });
-/* harmony import */ var _components_main_content_PlayList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-content/PlayList */ "./src/components/main-content/PlayList.js");
+/* harmony import */ var _components_main_content_play_list_PlayList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/main-content/play-list/PlayList */ "./src/components/main-content/play-list/PlayList.js");
 /* harmony import */ var _UserManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./UserManager */ "./src/managers/UserManager.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
-/* harmony import */ var _components_main_content_PlayPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/main-content/PlayPage */ "./src/components/main-content/PlayPage.js");
+/* harmony import */ var _components_main_content_play_page_PlayPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/main-content/play-page/PlayPage */ "./src/components/main-content/play-page/PlayPage.js");
+/* harmony import */ var _components_main_content_Loader__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/main-content/Loader */ "./src/components/main-content/Loader.js");
+/* harmony import */ var _components_main_content_users_UserPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/main-content/users/UserPage */ "./src/components/main-content/users/UserPage.js");
+/* harmony import */ var _components_main_content_users_CourierPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/main-content/users/CourierPage */ "./src/components/main-content/users/CourierPage.js");
+/* harmony import */ var _components_main_content_users_AdminPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/main-content/users/AdminPage */ "./src/components/main-content/users/AdminPage.js");
 
 
 
- //const serverUrl = 'http://localhost:8080/data-api';
 
+
+
+
+
+
+var pushToHistory = function pushToHistory(newPath) {
+  if (getUrlPath(document.URL) !== newPath) {
+    history.pushState(null, null, newPath);
+  }
+};
+
+var setLoader = function setLoader(queryRootNode) {
+  var rootNode = document.querySelector(queryRootNode);
+  rootNode.innerHTML = '';
+  rootNode.append(_components_main_content_Loader__WEBPACK_IMPORTED_MODULE_4__["default"]);
+};
+
+var userMenu = {
+  USER: function USER(user) {
+    return Object(_components_main_content_users_UserPage__WEBPACK_IMPORTED_MODULE_5__["default"])(user);
+  },
+  COURIER: function COURIER(courier) {
+    return Object(_components_main_content_users_CourierPage__WEBPACK_IMPORTED_MODULE_6__["default"])(courier);
+  },
+  ADMIN: function ADMIN(admin) {
+    return Object(_components_main_content_users_AdminPage__WEBPACK_IMPORTED_MODULE_7__["default"])(admin);
+  }
+};
 var toUrls = {
   PLAYS: function PLAYS() {
+    setLoader('#main-container');
     fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/plays').then(function (response) {
       return response.json();
     }).then(function (plays) {
-      // history.pushState(null, null,"/plays")
-      ContentManager.changeContent(Object(_components_main_content_PlayList__WEBPACK_IMPORTED_MODULE_0__["default"])(plays), '#main-container');
+      pushToHistory('/plays');
+      ContentManager.changeContent(Object(_components_main_content_play_list_PlayList__WEBPACK_IMPORTED_MODULE_0__["default"])(plays), _constants__WEBPACK_IMPORTED_MODULE_2__["MAIN_CONTAINER_QUERY"]);
     });
   },
   DATE: function DATE(path) {
+    // setLoader('#main-container');
     var dateId = parseInt(path);
     fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/date/' + dateId).then(function (response) {
       return response.json();
     }).then(function (date) {
-      // history.pushState(null, null,"/date/" + date.id);
-      ContentManager.changeContent(Object(_components_main_content_PlayPage__WEBPACK_IMPORTED_MODULE_3__["default"])(date), '#main-container');
+      pushToHistory('/date/' + date.id);
+      ContentManager.changeContent(Object(_components_main_content_play_page_PlayPage__WEBPACK_IMPORTED_MODULE_3__["default"])(date), _constants__WEBPACK_IMPORTED_MODULE_2__["MAIN_CONTAINER_QUERY"]);
+    });
+  },
+  USER_MENU: function USER_MENU() {
+    fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/user-menu').then(function (response) {
+      return response.json();
+    }).then(function (fullUserData) {
+      pushToHistory('/user-menu');
+      ContentManager.changeContent(userMenu[fullUserData.role.toUpperCase()](fullUserData), _constants__WEBPACK_IMPORTED_MODULE_2__["MAIN_CONTAINER_QUERY"]);
     });
   }
 };
@@ -1577,7 +1996,7 @@ var ContentManager = {
   },
   roteNewUrl: function roteNewUrl(url) {
     var urlPaths = url.split('/');
-    toUrls[urlPaths[1].toUpperCase()](urlPaths[2]);
+    toUrls[urlPaths[1].replace('-', '_').toUpperCase()](urlPaths[2]);
   },
   documentStartRender: function documentStartRender(rootElement, children) {
     rootElement.innerHTML = "";
@@ -1716,21 +2135,25 @@ var OrderManager = /*#__PURE__*/function () {
       var user = _UserManager__WEBPACK_IMPORTED_MODULE_0__["default"].getInstance().getUser();
 
       if (!date) {
+        alert("Error: Date is unknown");
         console.error("Date is unknown");
         return;
       }
 
       if (!user) {
+        alert("Error: User is undefined");
         console.error("User is undefined");
         return;
       }
 
       if (user.name.toUpperCase() === 'USER') {
+        alert("Error: User is undefined");
         console.error("User is undefined");
         return;
       }
 
       if (user.role !== 'User') {
+        alert("Error: User with role '" + user.role + "'can't take order.");
         console.error("User with role '" + user.role + "'can't take order.");
         return;
       }
@@ -1755,7 +2178,7 @@ var OrderManager = /*#__PURE__*/function () {
           console.log("completed");
         }
       })["catch"](function (reject) {
-        alert("Order not take... Something went wrong.");
+        alert("Order not take... Something went wrong. Error: " + reject);
       });
     }
   }, {
@@ -1792,11 +2215,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_header_LoginMenu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/header/LoginMenu */ "./src/components/header/LoginMenu.js");
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../util */ "./src/util.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../constants */ "./src/constants.js");
+/* harmony import */ var _ContentManager__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ContentManager */ "./src/managers/ContentManager.js");
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
 
 
 
@@ -1850,12 +2275,47 @@ var UserManager = /*#__PURE__*/function () {
         method: 'POST',
         body: JSON.stringify(user)
       }).then(function (response) {
+        if (!response.ok) {
+          console.error(response.status);
+          _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][response.status] ? _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][response.status]() : _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"].DEFAULT();
+        }
+
         return response.json();
       }).then(function (user) {
         _this2.setUser(user);
 
         Object(_util__WEBPACK_IMPORTED_MODULE_1__["clearForms"])();
         document.getElementById('registration-form').style.display = 'none';
+      })["catch"](function (reason) {
+        var regMsgDOM = document.getElementById("reg-msg"); // const error = JSON.parse(reason.message)
+
+        regMsgDOM.innerHTML = reason;
+      });
+    }
+  }, {
+    key: "addCourier",
+    value: function addCourier(courier) {
+      courier.role = "Courier";
+      fetch(_constants__WEBPACK_IMPORTED_MODULE_2__["SERVER_URL"] + '/courier', {
+        method: 'POST',
+        body: JSON.stringify(courier)
+      }).then(function (response) {
+        if (!response.ok) {
+          console.log(response.status);
+          _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][response.status] ? _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"][response.status]() : _constants__WEBPACK_IMPORTED_MODULE_2__["ERROR_ACCOUNT_CONST"].DEFAULT();
+        }
+
+        return response.json();
+      }).then(function (answer) {
+        if (!answer.result) {
+          document.getElementById('add-msg').innerText = 'Failed to create courier';
+        }
+
+        document.getElementById('add-msg').innerText = 'Courier created successful';
+        var inputs = document.querySelectorAll('.add-courier input');
+        inputs.forEach(function (input) {
+          return input.value = '';
+        });
       });
     }
   }, {
@@ -1863,7 +2323,15 @@ var UserManager = /*#__PURE__*/function () {
     value: function setUser(user) {
       this._logInUser = user;
       var userStatus = document.getElementById('user-status');
-      userStatus.innerHTML = user.role;
+      userStatus.innerHTML = '';
+      userStatus.appendChild(Object(_util__WEBPACK_IMPORTED_MODULE_1__["node"])({
+        type: 'a',
+        classList: ['role-menu-link'],
+        children: user.role.toLowerCase(),
+        onclick: function onclick() {
+          return _ContentManager__WEBPACK_IMPORTED_MODULE_3__["default"].roteNewUrl("/user-menu");
+        }
+      }));
       var utilBtn = document.getElementById('util-btn');
       Object(_util__WEBPACK_IMPORTED_MODULE_1__["clearForms"])();
       document.getElementById('login-form').style.display = 'none';
@@ -1897,6 +2365,7 @@ var UserManager = /*#__PURE__*/function () {
           return utilBtn.appendChild(btn);
         });
         userStatus.innerHTML = 'guest';
+        _ContentManager__WEBPACK_IMPORTED_MODULE_3__["default"].roteNewUrl('/plays');
       });
     }
   }]);
@@ -1982,6 +2451,14 @@ var node = function node(option) {
     element.href = option.href;
   }
 
+  if (option.value) {
+    element.value = option.value;
+  }
+
+  if (option.selected) {
+    element.selected = option.selected;
+  }
+
   if (option.inputType) {
     element.type = option.inputType;
   }
@@ -2027,6 +2504,10 @@ var node = function node(option) {
 
     if (optionStyles.background) {
       styles.background = optionStyles.background;
+    }
+
+    if (optionStyles.color) {
+      styles.color = optionStyles.color;
     }
   }
 

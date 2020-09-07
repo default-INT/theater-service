@@ -59,4 +59,22 @@ public class MysqlHibUserDAOTest {
         DAOFactory.getDAOFactory(DB).getUserDAO().update(user);
         assertEquals(user.getName(), "Solodkov M.A.");
     }
+
+    @Test
+    public void updateRole() {
+        User logInUser = new User("solodkov@gmail.com", "1806");
+        User user = DAOFactory.getDAOFactory(DB)
+                .getUserDAO()
+                .logIn(logInUser)
+                .orElseThrow(() -> new LogInFailedException(logInUser));
+        assertEquals(user.getRoleId(), 1);
+        user.setRoleId(2);
+        DAOFactory.getDAOFactory().getUserDAO()
+                .update(user);
+        assertEquals(user.getRoleId(), 2);
+        user.setRoleId(1);
+        DAOFactory.getDAOFactory().getUserDAO()
+                .update(user);
+        assertEquals(user.getRoleId(), 1);
+    }
 }

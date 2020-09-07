@@ -2,8 +2,12 @@ package by.gstu.itp.controllers.services;
 
 import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.beans.Hall;
+import by.gstu.itp.models.beans.Order;
+import by.gstu.itp.models.beans.accounts.Admin;
+import by.gstu.itp.models.beans.accounts.Courier;
 import by.gstu.itp.models.beans.accounts.User;
 import by.gstu.itp.models.data.dao.DAOFactory;
+import by.gstu.itp.models.exceptions.AccountAccessException;
 import by.gstu.itp.models.exceptions.DateNotFoundException;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -87,5 +91,42 @@ public final class HttpGetService {
 
         return GSON.toJson(date.orElseThrow(() -> new DateNotFoundException("Date with id = " + dateId + " not found")),
                 Date.class);
+    }
+
+    public static String getUserFullData(HttpServletRequest request) throws NullPointerException, ClassCastException {
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("authUser");
+        String answer;
+        if (user.getClass() == User.class) {
+            JsonObject jsonUser = GSON.toJsonTree(user, User.class).getAsJsonObject();
+            var orders = DAOFactory.getDAOFactory().getOrderDAO()
+                    .readAll()
+                    .filter(order -> order.getUserId() == user.getId())
+                    .collect(Collectors.toSet());
+            JsonArray jsonOrders = GSON.toJsonTree(orders).getAsJsonArray();
+            jsonUser.add("orders", jsonOrders);
+            answer = jsonUser.toString();
+        } else if (user.getClass() == Courier.class) {
+            JsonObject jsonCourier = GSON.toJsonTree(user, User.class).getAsJsonObject();
+            var orders = DAOFactory.getDAOFactory().getOrderDAO()
+                    .readAll()
+                    .filter(order -> !order.isCompleted())
+                    .collect(Collectors.toSet());
+            JsonArray jsonOrders = GSON.toJsonTree(orders).getAsJsonArray();
+            jsonCourier.add("orders", jsonOrders);
+            answer = jsonCourier.toString();
+        } else if (user.getClass() == Admin.class) {
+            JsonObject jsonAdmin = GSON.toJsonTree(user, User.class).getAsJsonObject();
+            var users = DAOFactory.getDAOFactory().getUserDAO()
+                    .readAll()
+                    .filter(u -> u.getClass() != Admin.class)
+                    .collect(Collectors.toSet());
+            JsonArray jsonUsers = GSON.toJsonTree(users).getAsJsonArray();
+            jsonAdmin.add("users", jsonUsers);
+            answer = jsonAdmin.toString();
+        } else {
+            throw new AccountAccessException(user);
+        }
+        return answer;
     }
 }

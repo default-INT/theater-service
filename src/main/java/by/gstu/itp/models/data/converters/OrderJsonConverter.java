@@ -7,7 +7,7 @@ import com.google.gson.*;
 
 import java.lang.reflect.Type;
 
-public class OrderJsonConverter implements JsonDeserializer<Order> {
+public class OrderJsonConverter implements JsonDeserializer<Order>, JsonSerializer<Order> {
     @Override
     public Order deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext)
             throws JsonParseException {
@@ -24,5 +24,20 @@ public class OrderJsonConverter implements JsonDeserializer<Order> {
         Date date = jsonDeserializationContext.deserialize(jsonOrder.get("date"), Date.class);
 
         return new Order(id, row, seat, user, date);
+    }
+
+    @Override
+    public JsonElement serialize(Order order, Type type, JsonSerializationContext jsonSerializationContext) {
+        JsonObject jsonObject = new JsonObject();
+
+        jsonObject.addProperty("id", order.getId());
+        jsonObject.addProperty("row", order.getRow());
+        jsonObject.addProperty("seat", order.getSeat());
+        jsonObject.addProperty("price", order.getPrice());
+        jsonObject.addProperty("completed", order.isCompleted());
+        jsonObject.add("user", jsonSerializationContext.serialize(order.getUser(), User.class));
+        jsonObject.add("date", jsonSerializationContext.serialize(order.getDate(), Date.class));
+
+        return jsonObject;
     }
 }

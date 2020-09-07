@@ -20,14 +20,15 @@ public class DataAPIServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger();
 
-    private enum UrlPathGet {
+    public enum UrlPathGet {
         PLAYS(HttpGetService::getAllPlays),
         AUTHORS(HttpGetService::getAllAuthors),
         ORDERED_TICKETS(HttpGetService::getAllTickets),
         AUTH(HttpGetService::getAuthUser),
         DATE(HttpGetService::getDate),
         HALL_INFO(HttpGetService::getHallInfo),
-        HALL_SCHEMA(HttpGetService::getHallSchema);
+        HALL_SCHEMA(HttpGetService::getHallSchema),
+        USER_MENU(HttpGetService::getUserFullData);
 
         private final Function<HttpServletRequest, String> requestHandler;
 
@@ -45,7 +46,9 @@ public class DataAPIServlet extends HttpServlet {
         REG(HttpPostService::registration),
         DATE_ADD(HttpPostService::addDate),
         ADD_ORDER(HttpPostService::addOrder),
-        LOGOUT(HttpPostService::logout);
+        LOGOUT(HttpPostService::logout),
+        COMPLETE_ORDER(HttpPostService::completeOrder),
+        COURIER(HttpPostService::addCourier);
 
         private final Function<HttpServletRequest, String> requestHandler;
 
@@ -100,7 +103,8 @@ public class DataAPIServlet extends HttpServlet {
 
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         String[] urlParts = request.getPathInfo().split("/");
         String servletPath = urlParts[1].replace("-", "_");
 
@@ -136,7 +140,5 @@ public class DataAPIServlet extends HttpServlet {
             logger.info(e);
             response.sendError(404, jsonError.toString());
         }
-
-
     }
 }

@@ -17,6 +17,13 @@ public class MysqlHibOrderDAO implements OrderDAO {
     }
 
     @Override
+    public Order read(int orderId) {
+        try (Session session = HibernateSession.getSessionFactory().openSession()) {
+            return session.get(Order.class, orderId);
+        }
+    }
+
+    @Override
     public void add(Order order) {
         long countOrder = order.getDate()
                 .getOrders()
@@ -48,6 +55,17 @@ public class MysqlHibOrderDAO implements OrderDAO {
         try (Session session = HibernateSession.getSessionFactory().openSession()) {
             session.beginTransaction();
             session.update(newOrder);
+            session.getTransaction().commit();
+        }
+    }
+
+    @Override
+    public void completeOrder(int orderId) {
+        try (Session session = HibernateSession.getSessionFactory().openSession()) {
+            session.beginTransaction();
+            Order order = session.get(Order.class, orderId);
+            order.setCompleted(true);
+            session.update(order);
             session.getTransaction().commit();
         }
     }

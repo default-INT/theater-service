@@ -34,6 +34,8 @@ public class User extends EntityBean {
     private String email;
     @Column
     private String phone;
+    @Column(name = "role_id", updatable = false, insertable = false)
+    private int roleId;
 
     public User() {
     }
@@ -89,10 +91,18 @@ public class User extends EntityBean {
         this(
                 jsonObject.get("id").getAsInt(),
                 jsonObject.get("name").getAsString(),
-                "undefined",
+                jsonObject.get("password") != null ? jsonObject.get("password").getAsString() : "undefined",
                 jsonObject.get("email").getAsString(),
                 jsonObject.get("phone").getAsString()
         );
+    }
+
+    public int getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(int roleId) {
+        this.roleId = roleId;
     }
 
     public void setName(String name) {

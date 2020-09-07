@@ -44,6 +44,8 @@ public class Order extends EntityBean {
     @Enumerated(EnumType.STRING)
     @Column(name = "ticket_category")
     private TicketCategory ticketCategory;
+    @Column
+    private boolean completed;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
@@ -67,6 +69,7 @@ public class Order extends EntityBean {
         this.user = Objects.requireNonNull(user);
         this.date = Objects.requireNonNull(date);
         this.ticketCategory = TicketCategory.valueOf(Hall.getInstance().getTicketType(row));
+        this.completed = false;
         this.price = DEFAULT_PRICE.multiply(BigDecimal.valueOf(ticketCategory.getDiscount()));
     }
 
@@ -127,6 +130,14 @@ public class Order extends EntityBean {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 
     public BigDecimal getPrice() {

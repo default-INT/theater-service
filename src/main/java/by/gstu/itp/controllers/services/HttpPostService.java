@@ -3,6 +3,8 @@ package by.gstu.itp.controllers.services;
 import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.beans.Order;
 import by.gstu.itp.models.beans.Play;
+import by.gstu.itp.models.beans.accounts.Admin;
+import by.gstu.itp.models.beans.accounts.Courier;
 import by.gstu.itp.models.beans.accounts.User;
 import by.gstu.itp.models.data.dao.DAOFactory;
 import by.gstu.itp.models.data.dao.UserDAO;
@@ -18,6 +20,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public final class HttpPostService {
     private static final DateTimeFormatter JSON_DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
@@ -82,21 +85,28 @@ public final class HttpPostService {
 
         JsonArray ordersJson = UtilFactory.convertHttpRequestToJsonArray(request);
         List<Order> orders = new ArrayList<>();
-        ordersJson.forEach(order -> {
-            JsonObject jsonObject = order.getAsJsonObject();
+        JsonObject jsonObject = ordersJson.get(0).getAsJsonObject();
 
-            int row = jsonObject.get("row").getAsInt();
-            int seat = jsonObject.get("seat").getAsInt();
-            User user = (User) request.getSession().getAttribute("authUser");
-            int dateId = jsonObject.get("dateId").getAsInt();
-            Date orderDate = DAOFactory.getDAOFactory().getDateDAO()
-                    .readAll()
-                    .filter(date -> date.getId() == dateId)
-                    .findFirst()
-                    .orElseThrow(DateNotFoundException::new);
+        User user = (User) request.getSession().getAttribute("authUser");
 
-            orders.add(new Order(row, seat, user, orderDate));
-        });
+        if (user.getClass() != User.class) {
+            throw new AccountAccessException(user);
+        }
+
+        int dateId = jsonObject.get("dateId").getAsInt();
+
+        Date orderDate = DAOFactory.getDAOFactory().getDateDAO()
+                .readAll()
+                .filter(date -> date.getId() == dateId)
+                .findFirst()
+                .orElseThrow(DateNotFoundException::new);
+
+        ordersJson.forEach(order -> orders.add(new Order(
+                order.getAsJsonObject().get("row").getAsInt(),
+                order.getAsJsonObject().get("seat").getAsInt(),
+                user,
+                orderDate
+        )));
 
         DAOFactory.getDAOFactory().getOrderDAO()
                 .addAll(orders);
@@ -113,5 +123,37 @@ public final class HttpPostService {
         JsonObject jsonAnswer = new JsonObject();
         jsonAnswer.addProperty("status", "LOGOUT");
         return jsonAnswer.toString();
+    }
+
+    public static String completeOrder(HttpServletRequest request) throws ClassCastException {
+        HttpSession session = request.getSession();
+        Courier courier = (Courier) session.getAttribute("authUser");
+        if (courier.getClass() != Courier.class) {
+            throw new AccountAccessException(courier);
+        }
+        JsonObject jsonRequest = UtilFactory.convertHttpRequestToJsonObject(request);
+        int orderId = jsonRequest.get("orderId").getAsInt();
+        DAOFactory.getDAOFactory().getOrderDAO().completeOrder(orderId);
+        JsonObject jsonAnswer = new JsonObject();
+        jsonAnswer.addProperty("result", true);
+        return jsonAnswer.toString();
+    }
+
+    public static String addCourier(HttpServletRequest request) throws ClassCastException {
+        HttpSession session = request.getSession();
+        Admin admin = (Admin) session.getAttribute("authUser");
+        if (admin.getClass() != Admin.class) {
+            throw new AccountAccessException(admin);
+        }
+        JsonObject jsonRequest = UtilFactory.convertHttpRequestToJsonObject(request);
+        User newCourier = GSON.fromJson(jsonRequest, User.class);
+        DAOFactory.getDAOFactory().getUserDAO()
+                .add(newCourier);
+        if (newCourier.getId() == 0) {
+            throw new RegistrationFailedException(newCourier);
+        }
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("result", true);
+        return jsonObject.toString();
     }
 }
