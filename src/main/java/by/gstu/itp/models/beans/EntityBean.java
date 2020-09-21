@@ -10,7 +10,7 @@ public abstract class EntityBean implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(unique = true)
-    private int id; //TODO: protected ??
+    private int id;
 
     public EntityBean() { }
 
@@ -26,6 +26,9 @@ public abstract class EntityBean implements Serializable {
     }
 
     public void setId(int id) {
+        if (id < 0) {
+            throw new NegativeIdException(id);
+        }
         this.id = id;
     }
 

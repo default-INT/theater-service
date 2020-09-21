@@ -1,12 +1,16 @@
 package by.gstu.itp.models.data.converters;
 
 import by.gstu.itp.models.beans.Author;
+import by.gstu.itp.models.beans.Date;
 import by.gstu.itp.models.beans.Genre;
 import by.gstu.itp.models.beans.Play;
 import com.google.gson.*;
 
 import java.lang.reflect.Type;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class PlayJsonConverter implements JsonSerializer<Play>, JsonDeserializer<Play> {
 
@@ -21,17 +25,18 @@ public class PlayJsonConverter implements JsonSerializer<Play>, JsonDeserializer
         jsonArgsPlay.addProperty("author", play.getAuthor().getName());
         jsonArgsPlay.addProperty("genre", play.getGenre().getName());
 
-        JsonArray datesJsonArray = new JsonArray();
-        play.getDates().forEach(date -> {
-            JsonObject jsonDate = new JsonObject();
+        Set<JsonObject> dates =  play.getDates().stream()
+                .filter(date -> date.getDate().isAfter(LocalDate.now()))
+                .map(date -> {
+                    JsonObject jsonDate = new JsonObject();
 
-            jsonDate.addProperty("id", date.getId());
-            jsonDate.addProperty("date", date.getDate().format(JSON_DATE_FORMATTER));
+                    jsonDate.addProperty("id", date.getId());
+                    jsonDate.addProperty("date", date.getDate().format(JSON_DATE_FORMATTER));
 
-            datesJsonArray.add(jsonDate);
-        });
+                    return jsonDate;
+                }).collect(Collectors.toSet());
 
-        jsonArgsPlay.add("dates", datesJsonArray);
+        jsonArgsPlay.add("dates", jsonSerializationContext.serialize(dates));
 
         return jsonArgsPlay;
     }

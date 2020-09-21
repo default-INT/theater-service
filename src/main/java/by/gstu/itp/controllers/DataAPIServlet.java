@@ -110,7 +110,7 @@ public class DataAPIServlet extends HttpServlet {
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-        response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Acce    ss-Control-Allow-Origin", "*");
         try {
             UrlPathGet urlPath = UrlPathGet.valueOf(servletPath.toUpperCase());
             response.getWriter().write(urlPath.getAnswer(request));

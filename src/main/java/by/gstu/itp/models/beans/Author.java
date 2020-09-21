@@ -4,9 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 import java.util.Objects;
 
-/**
- * Immutable class describe play author.
- */
+
 @Entity
 @Table(name="authors")
 @Access(AccessType.FIELD)

@@ -15,7 +15,9 @@ import com.google.gson.JsonObject;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.time.LocalDate;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public final class HttpGetService {
@@ -33,6 +35,12 @@ public final class HttpGetService {
 
         answerJson.addProperty("status", "User not auth");
         return answerJson.toString();
+    }
+
+    private static Set<Date> datesFilter(Set<Date> dates) {
+        return dates.stream()
+                .filter(date -> date.getDate().isAfter(LocalDate.now()))
+                .collect(Collectors.toSet());
     }
 
     public static String getAllPlays(HttpServletRequest request) {

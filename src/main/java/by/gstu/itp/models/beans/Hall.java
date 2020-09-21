@@ -1,7 +1,7 @@
 package by.gstu.itp.models.beans;
 
 import by.gstu.itp.models.data.xml.dom.HallTypeDOM;
-import by.gstu.itp.models.data.xml.dom.XmlDomDAOFactory;
+import by.gstu.itp.models.data.xml.dom.XmlDomFactory;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
@@ -18,7 +18,7 @@ public class Hall {
             return hallSchema;
         }
         hallSchema = new JsonArray();
-        XmlDomDAOFactory.getInstance().getHallTypeDOM()
+        XmlDomFactory.getInstance().getHallTypeDOM()
                 .getRowSeats()
                 .forEach(seat -> {
                     JsonObject jsonObject = new JsonObject();
@@ -32,7 +32,7 @@ public class Hall {
     private static Hall instance;
 
     private Hall() {
-        HallTypeDOM factory = XmlDomDAOFactory.getInstance().getHallTypeDOM();
+        HallTypeDOM factory = XmlDomFactory.getInstance().getHallTypeDOM();
         cheapRowStart = factory.getCheapRowStart();
         cheapRowEnd = factory.getCheapRowEnd();
         expensiveRowStart = factory.getExpensiveRowStart();

@@ -13,5 +13,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306?serverTimezone=UTC</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="theater_service@localhost" uuid="8ac007a3-a90c-477c-ae58-77759277c028">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/theater_service?serverTimezone=UTC</jdbc-url>
+    </data-source>
   </component>
 </project>
