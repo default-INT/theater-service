@@ -1,0 +1,170 @@
+
+#content main .play-page .title {
+    display: flex;
+    justify-content: center;
+}
+
+#content main .play-page .title .title-content {
+    background: #f00;
+    color: white;
+    font-size: inherit;
+    padding: 1.6vmin;
+}
+
+#content main .play-page .short-info {
+    padding: 1vmax;
+}
+
+#content main .play-page .short-info div {
+    padding: 1vmin;
+}
+
+#content main .play-page .other-dates {
+    padding: 1vmax;
+}
+
+#content main .play-page .other-dates a {
+    padding: 1vmin;
+}
+
+#content main .play-page .other-dates a.selected-date {
+    background: #f00;
+    color: white;
+}
+
+#content main .play-page .other-dates a.selected-date:hover {
+    background: white;
+    color: #f00;
+}
+
+#content main .play-page .other-dates a:hover {
+    background: #f00;
+    color: white;
+}
+
+#content main .play-page .play-hall {
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+    padding: 2vmax 0 2vmax 0;
+}
+
+#content main .play-page .play-hall .row {
+    display: flex;
+    justify-content: center;
+}
+
+#content main .play-page .play-hall .seat {
+    width: auto;
+    margin-right: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+#content main .play-page .play-hall .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+#content main .play-page .play-hall .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+
+#content main .play-page .play-hall .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 4vmin;
+    height: 4vmin;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.2em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    max-height: 0.8em;
+    max-width: 0.8em;
+}
+
+#content main .play-page .play-hall .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #0ec91e;
+}
+
+#content main .play-page .play-hall .custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+
+#content main .play-page .play-hall .custom-checkbox:checked+label::before {
+    border-color: #0ec91e;
+    background-color: #0ec91e;
+}
+
+#content main .play-page .play-hall .custom-checkbox:disabled+label::before {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+#content main .play-page .select-tickets-info {
+    padding: 1vmax;
+}
+
+#content main .play-page .select-tickets-info .category-line {
+    display: flex;
+    justify-content: center;
+}
+
+#content main .play-page .select-tickets-info .category-line div {
+    margin-left: 1vmin;
+}
+
+#content main .play-page .order-total-cost  {
+    display: flex;
+    padding: 1vmax;
+}
+#content main .play-page .order-total-cost .total-cost-content {
+    display: flex;
+    padding: 0.2em;
+    background: #f00;
+    color: white;
+}
+
+#content main .play-page .order-total-cost .total-cost-content div {
+    margin-left: 1vmin;
+}
+
+#content main .play-page .complete-order-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vmin 0 2vmin;
+    border-top: 3px solid #f4f4f4;;
+}
+
+#content main .play-page .complete-order-section a {
+    padding: 0.2em;
+    background: #f00;
+    color: white;
+    margin: 0.5em;
+}
+
+#content main .play-page .complete-order-section a:hover {
+    background: white;
+    color: #f00;
+}
+
+.message-window {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(0,0,0); /* Затемнение фона */
+    background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */
+    z-index: 1; /* Фон на нижнем слое */
+    overflow: auto; /* При необходимости, то появиться прокрутка */
+}

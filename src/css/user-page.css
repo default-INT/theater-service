@@ -1,0 +1,103 @@
+.user-page .user-title {
+    text-align: center;
+    font-size: 1.5em;
+    padding-bottom: 1vmax;
+    border-bottom: 0.3vmin solid #f4f4f4;
+}
+
+.user-page .user-header {
+
+    border-bottom: 1.5vmax solid #f4f4f4;
+}
+
+.user-page .user-header .item-line {
+    display: flex;
+    padding: 0.4em;
+}
+
+.user-page .user-header .item-line div {
+    padding-right: 0.4em;
+}
+
+.user-page .user-order-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-page .user-order-list .order-item {
+    padding: 1em;
+    border-bottom: 0.1em solid #f4f4f4;
+}
+
+.user-page .user-order-list .order-item .play-name {
+    display: inline-block;
+    padding: 0.3em;
+    background: #f00;
+    color: white;
+}
+
+.user-page .user-order-list .item-line {
+    display: flex;
+    padding: 0.1em 0.1em 0.1em 1em;
+}
+
+.user-page .user-order-list .item-line div {
+    padding-right: 0.2em;
+}
+
+.user-page .user-order-list .status {
+    display: inline-block;
+    padding-right: 1em;
+    padding-bottom: 0.3em;
+    text-decoration: underline;
+    color: white;
+}
+
+.user-page .user-order-list .completed {
+    background: #0ec91e;
+}
+.user-page .user-order-list .processing {
+    background: #ff0000;
+}
+
+.user-page .user-order-list .complete-btn {
+    padding: 0.3em;
+    background: #ff0000;
+    color: white;
+    display: inline-block;
+    float: right;
+}
+
+.user-page .user-order-list .complete-btn:hover {
+    background: white;
+    color: #ff0000;
+}
+
+.user-page .add-courier .title {
+    border-bottom: 0.2em solid #f4f4f4;
+}
+
+.user-page .add-courier .add-form {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-page .add-courier .msg {
+    padding: 1vmin;
+    color: gray;
+}
+
+.user-page .add-courier .add-btn {
+    margin-top: 1vmax;
+    padding: 1vmin;
+    background: #f00;
+    color: white;
+}
+
+.user-page .add-courier .add-btn:hover {
+    background: white;
+    color: #f00;
+}
+

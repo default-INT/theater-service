@@ -1,10 +1,12 @@
 import {node} from "../../util";
 import LoginMenu from "./LoginMenu";
+import ContentManager from "../../managers/ContentManager";
 
 
 const Title = node({
-    children: 'Theater',
-    classList: ['title']
+    children: 'Cinema',
+    classList: ['title'],
+    onclick: e => ContentManager.roteNewUrl('/plays')
 });
 
 export default node({

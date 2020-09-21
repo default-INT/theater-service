@@ -1,5 +1,6 @@
 /*
     Header start
+    old color: #f00 - red
 */
 
 header {
@@ -21,6 +22,14 @@ header .title {
     color: white;
     background: #f00;
     box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+header .title:hover {
+    background: white;
+    color: #f00;
+
 }
 
 header #login-menu {
@@ -34,7 +43,7 @@ header #login-menu div {
 }
 
 header #login-menu #util-btn {
-    border-left: red 0.5vmin solid;
+    border-left: #f00 0.5vmin solid;
 }
 
 header #login-menu #util-btn a {
@@ -45,6 +54,17 @@ header #login-menu #util-btn a {
 header #login-menu #util-btn a:hover {
     background: #f00;
     color: white;
+}
+
+header .role-menu-link {
+    background: #f00;
+    color: white;
+    padding: 1vmin;
+}
+
+header .role-menu-link:hover {
+    background: white;
+    color: #f00;
 }
 
 /*
